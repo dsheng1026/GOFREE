@@ -1,9 +1,10 @@
+devtools::load_all(".")
 prj <- ReadGCAM(filetype = 'prj',
-                input_path = "C:/GODEEP",
+                input_path = system.file("extdata", package = "GOFREE"),
                 prj_name = "package.dat")
 
-EJ_activity <- GCAM_EJ(prj)
-GW_activity <- GCAM_GW(EJ_activity)
+EJ_activity <- GCAM_EJ(prj) # ~ 20s
+GW_activity <- GCAM_GW(EJ_activity) # ~ 4s
 JOB_activity <- GCAM_JOB(GW_activity, "Net")
 
 PLOT_EF()
