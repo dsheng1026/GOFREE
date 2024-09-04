@@ -1,0 +1,1035 @@
+"","supplysector","subsector","technology","year","input.capital","capital.overnight","fixed.charge.rate"
+"1","base load generation","biomass","biomass_base_conv",1975,"capital",1065,0.13
+"2","base load generation","biomass","biomass_base_conv",1990,"capital",1065,0.13
+"3","base load generation","biomass","biomass_base_conv",2005,"capital",1065,0.13
+"4","base load generation","biomass","biomass_base_conv",2010,"capital",1065,0.13
+"5","base load generation","biomass","biomass_base_conv",2015,"capital",1065,0.13
+"6","base load generation","biomass","biomass_base_conv",2020,"capital",1042,0.13
+"7","base load generation","biomass","biomass_base_conv",2025,"capital",1021,0.13
+"8","base load generation","biomass","biomass_base_conv",2030,"capital",1001,0.13
+"9","base load generation","biomass","biomass_base_conv",2035,"capital",984,0.13
+"10","base load generation","biomass","biomass_base_conv",2040,"capital",968,0.13
+"11","base load generation","biomass","biomass_base_conv",2045,"capital",954,0.13
+"12","base load generation","biomass","biomass_base_conv",2050,"capital",941,0.13
+"13","base load generation","biomass","biomass_base_conv",2055,"capital",930,0.13
+"14","base load generation","biomass","biomass_base_conv",2060,"capital",919,0.13
+"15","base load generation","biomass","biomass_base_conv",2065,"capital",910,0.13
+"16","base load generation","biomass","biomass_base_conv",2070,"capital",901,0.13
+"17","base load generation","biomass","biomass_base_conv",2075,"capital",893,0.13
+"18","base load generation","biomass","biomass_base_conv",2080,"capital",886,0.13
+"19","base load generation","biomass","biomass_base_conv",2085,"capital",880,0.13
+"20","base load generation","biomass","biomass_base_conv",2090,"capital",874,0.13
+"21","base load generation","biomass","biomass_base_conv",2095,"capital",869,0.13
+"22","base load generation","biomass","biomass_base_conv",2100,"capital",864,0.13
+"23","base load generation","biomass","biomass_base_conv_CCS",1975,"capital",2051,0.13
+"24","base load generation","biomass","biomass_base_conv_CCS",1990,"capital",2051,0.13
+"25","base load generation","biomass","biomass_base_conv_CCS",2005,"capital",2051,0.13
+"26","base load generation","biomass","biomass_base_conv_CCS",2010,"capital",2051,0.13
+"27","base load generation","biomass","biomass_base_conv_CCS",2015,"capital",2051,0.13
+"28","base load generation","biomass","biomass_base_conv_CCS",2020,"capital",1962,0.13
+"29","base load generation","biomass","biomass_base_conv_CCS",2025,"capital",1882,0.13
+"30","base load generation","biomass","biomass_base_conv_CCS",2030,"capital",1810,0.13
+"31","base load generation","biomass","biomass_base_conv_CCS",2035,"capital",1744,0.13
+"32","base load generation","biomass","biomass_base_conv_CCS",2040,"capital",1685,0.13
+"33","base load generation","biomass","biomass_base_conv_CCS",2045,"capital",1631,0.13
+"34","base load generation","biomass","biomass_base_conv_CCS",2050,"capital",1583,0.13
+"35","base load generation","biomass","biomass_base_conv_CCS",2055,"capital",1539,0.13
+"36","base load generation","biomass","biomass_base_conv_CCS",2060,"capital",1500,0.13
+"37","base load generation","biomass","biomass_base_conv_CCS",2065,"capital",1464,0.13
+"38","base load generation","biomass","biomass_base_conv_CCS",2070,"capital",1432,0.13
+"39","base load generation","biomass","biomass_base_conv_CCS",2075,"capital",1403,0.13
+"40","base load generation","biomass","biomass_base_conv_CCS",2080,"capital",1376,0.13
+"41","base load generation","biomass","biomass_base_conv_CCS",2085,"capital",1352,0.13
+"42","base load generation","biomass","biomass_base_conv_CCS",2090,"capital",1331,0.13
+"43","base load generation","biomass","biomass_base_conv_CCS",2095,"capital",1311,0.13
+"44","base load generation","biomass","biomass_base_conv_CCS",2100,"capital",1294,0.13
+"45","base load generation","biomass","biomass_base_IGCC",1975,"capital",1598,0.13
+"46","base load generation","biomass","biomass_base_IGCC",1990,"capital",1598,0.13
+"47","base load generation","biomass","biomass_base_IGCC",2005,"capital",1598,0.13
+"48","base load generation","biomass","biomass_base_IGCC",2010,"capital",1598,0.13
+"49","base load generation","biomass","biomass_base_IGCC",2015,"capital",1598,0.13
+"50","base load generation","biomass","biomass_base_IGCC",2020,"capital",1534,0.13
+"51","base load generation","biomass","biomass_base_IGCC",2025,"capital",1475,0.13
+"52","base load generation","biomass","biomass_base_IGCC",2030,"capital",1423,0.13
+"53","base load generation","biomass","biomass_base_IGCC",2035,"capital",1375,0.13
+"54","base load generation","biomass","biomass_base_IGCC",2040,"capital",1332,0.13
+"55","base load generation","biomass","biomass_base_IGCC",2045,"capital",1293,0.13
+"56","base load generation","biomass","biomass_base_IGCC",2050,"capital",1258,0.13
+"57","base load generation","biomass","biomass_base_IGCC",2055,"capital",1226,0.13
+"58","base load generation","biomass","biomass_base_IGCC",2060,"capital",1197,0.13
+"59","base load generation","biomass","biomass_base_IGCC",2065,"capital",1171,0.13
+"60","base load generation","biomass","biomass_base_IGCC",2070,"capital",1148,0.13
+"61","base load generation","biomass","biomass_base_IGCC",2075,"capital",1127,0.13
+"62","base load generation","biomass","biomass_base_IGCC",2080,"capital",1107,0.13
+"63","base load generation","biomass","biomass_base_IGCC",2085,"capital",1090,0.13
+"64","base load generation","biomass","biomass_base_IGCC",2090,"capital",1074,0.13
+"65","base load generation","biomass","biomass_base_IGCC",2095,"capital",1060,0.13
+"66","base load generation","biomass","biomass_base_IGCC",2100,"capital",1047,0.13
+"67","base load generation","biomass","biomass_base_IGCC_CCS",1975,"capital",2357,0.13
+"68","base load generation","biomass","biomass_base_IGCC_CCS",1990,"capital",2357,0.13
+"69","base load generation","biomass","biomass_base_IGCC_CCS",2005,"capital",2357,0.13
+"70","base load generation","biomass","biomass_base_IGCC_CCS",2010,"capital",2357,0.13
+"71","base load generation","biomass","biomass_base_IGCC_CCS",2015,"capital",2357,0.13
+"72","base load generation","biomass","biomass_base_IGCC_CCS",2020,"capital",2235,0.13
+"73","base load generation","biomass","biomass_base_IGCC_CCS",2025,"capital",2124,0.13
+"74","base load generation","biomass","biomass_base_IGCC_CCS",2030,"capital",2024,0.13
+"75","base load generation","biomass","biomass_base_IGCC_CCS",2035,"capital",1934,0.13
+"76","base load generation","biomass","biomass_base_IGCC_CCS",2040,"capital",1853,0.13
+"77","base load generation","biomass","biomass_base_IGCC_CCS",2045,"capital",1779,0.13
+"78","base load generation","biomass","biomass_base_IGCC_CCS",2050,"capital",1712,0.13
+"79","base load generation","biomass","biomass_base_IGCC_CCS",2055,"capital",1652,0.13
+"80","base load generation","biomass","biomass_base_IGCC_CCS",2060,"capital",1597,0.13
+"81","base load generation","biomass","biomass_base_IGCC_CCS",2065,"capital",1548,0.13
+"82","base load generation","biomass","biomass_base_IGCC_CCS",2070,"capital",1503,0.13
+"83","base load generation","biomass","biomass_base_IGCC_CCS",2075,"capital",1463,0.13
+"84","base load generation","biomass","biomass_base_IGCC_CCS",2080,"capital",1427,0.13
+"85","base load generation","biomass","biomass_base_IGCC_CCS",2085,"capital",1394,0.13
+"86","base load generation","biomass","biomass_base_IGCC_CCS",2090,"capital",1364,0.13
+"87","base load generation","biomass","biomass_base_IGCC_CCS",2095,"capital",1337,0.13
+"88","base load generation","biomass","biomass_base_IGCC_CCS",2100,"capital",1313,0.13
+"89","intermediate generation","biomass","biomass_int_conv",1975,"capital",1065,0.13
+"90","intermediate generation","biomass","biomass_int_conv",1990,"capital",1065,0.13
+"91","intermediate generation","biomass","biomass_int_conv",2005,"capital",1065,0.13
+"92","intermediate generation","biomass","biomass_int_conv",2010,"capital",1065,0.13
+"93","intermediate generation","biomass","biomass_int_conv",2015,"capital",1065,0.13
+"94","intermediate generation","biomass","biomass_int_conv",2020,"capital",1042,0.13
+"95","intermediate generation","biomass","biomass_int_conv",2025,"capital",1021,0.13
+"96","intermediate generation","biomass","biomass_int_conv",2030,"capital",1001,0.13
+"97","intermediate generation","biomass","biomass_int_conv",2035,"capital",984,0.13
+"98","intermediate generation","biomass","biomass_int_conv",2040,"capital",968,0.13
+"99","intermediate generation","biomass","biomass_int_conv",2045,"capital",954,0.13
+"100","intermediate generation","biomass","biomass_int_conv",2050,"capital",941,0.13
+"101","intermediate generation","biomass","biomass_int_conv",2055,"capital",930,0.13
+"102","intermediate generation","biomass","biomass_int_conv",2060,"capital",919,0.13
+"103","intermediate generation","biomass","biomass_int_conv",2065,"capital",910,0.13
+"104","intermediate generation","biomass","biomass_int_conv",2070,"capital",901,0.13
+"105","intermediate generation","biomass","biomass_int_conv",2075,"capital",893,0.13
+"106","intermediate generation","biomass","biomass_int_conv",2080,"capital",886,0.13
+"107","intermediate generation","biomass","biomass_int_conv",2085,"capital",880,0.13
+"108","intermediate generation","biomass","biomass_int_conv",2090,"capital",874,0.13
+"109","intermediate generation","biomass","biomass_int_conv",2095,"capital",869,0.13
+"110","intermediate generation","biomass","biomass_int_conv",2100,"capital",864,0.13
+"111","intermediate generation","biomass","biomass_int_conv_CCS",1975,"capital",2051,0.13
+"112","intermediate generation","biomass","biomass_int_conv_CCS",1990,"capital",2051,0.13
+"113","intermediate generation","biomass","biomass_int_conv_CCS",2005,"capital",2051,0.13
+"114","intermediate generation","biomass","biomass_int_conv_CCS",2010,"capital",2051,0.13
+"115","intermediate generation","biomass","biomass_int_conv_CCS",2015,"capital",2051,0.13
+"116","intermediate generation","biomass","biomass_int_conv_CCS",2020,"capital",1962,0.13
+"117","intermediate generation","biomass","biomass_int_conv_CCS",2025,"capital",1882,0.13
+"118","intermediate generation","biomass","biomass_int_conv_CCS",2030,"capital",1810,0.13
+"119","intermediate generation","biomass","biomass_int_conv_CCS",2035,"capital",1744,0.13
+"120","intermediate generation","biomass","biomass_int_conv_CCS",2040,"capital",1685,0.13
+"121","intermediate generation","biomass","biomass_int_conv_CCS",2045,"capital",1631,0.13
+"122","intermediate generation","biomass","biomass_int_conv_CCS",2050,"capital",1583,0.13
+"123","intermediate generation","biomass","biomass_int_conv_CCS",2055,"capital",1539,0.13
+"124","intermediate generation","biomass","biomass_int_conv_CCS",2060,"capital",1500,0.13
+"125","intermediate generation","biomass","biomass_int_conv_CCS",2065,"capital",1464,0.13
+"126","intermediate generation","biomass","biomass_int_conv_CCS",2070,"capital",1432,0.13
+"127","intermediate generation","biomass","biomass_int_conv_CCS",2075,"capital",1403,0.13
+"128","intermediate generation","biomass","biomass_int_conv_CCS",2080,"capital",1376,0.13
+"129","intermediate generation","biomass","biomass_int_conv_CCS",2085,"capital",1352,0.13
+"130","intermediate generation","biomass","biomass_int_conv_CCS",2090,"capital",1331,0.13
+"131","intermediate generation","biomass","biomass_int_conv_CCS",2095,"capital",1311,0.13
+"132","intermediate generation","biomass","biomass_int_conv_CCS",2100,"capital",1294,0.13
+"133","intermediate generation","biomass","biomass_int_IGCC",1975,"capital",1598,0.13
+"134","intermediate generation","biomass","biomass_int_IGCC",1990,"capital",1598,0.13
+"135","intermediate generation","biomass","biomass_int_IGCC",2005,"capital",1598,0.13
+"136","intermediate generation","biomass","biomass_int_IGCC",2010,"capital",1598,0.13
+"137","intermediate generation","biomass","biomass_int_IGCC",2015,"capital",1598,0.13
+"138","intermediate generation","biomass","biomass_int_IGCC",2020,"capital",1534,0.13
+"139","intermediate generation","biomass","biomass_int_IGCC",2025,"capital",1475,0.13
+"140","intermediate generation","biomass","biomass_int_IGCC",2030,"capital",1423,0.13
+"141","intermediate generation","biomass","biomass_int_IGCC",2035,"capital",1375,0.13
+"142","intermediate generation","biomass","biomass_int_IGCC",2040,"capital",1332,0.13
+"143","intermediate generation","biomass","biomass_int_IGCC",2045,"capital",1293,0.13
+"144","intermediate generation","biomass","biomass_int_IGCC",2050,"capital",1258,0.13
+"145","intermediate generation","biomass","biomass_int_IGCC",2055,"capital",1226,0.13
+"146","intermediate generation","biomass","biomass_int_IGCC",2060,"capital",1197,0.13
+"147","intermediate generation","biomass","biomass_int_IGCC",2065,"capital",1171,0.13
+"148","intermediate generation","biomass","biomass_int_IGCC",2070,"capital",1148,0.13
+"149","intermediate generation","biomass","biomass_int_IGCC",2075,"capital",1127,0.13
+"150","intermediate generation","biomass","biomass_int_IGCC",2080,"capital",1107,0.13
+"151","intermediate generation","biomass","biomass_int_IGCC",2085,"capital",1090,0.13
+"152","intermediate generation","biomass","biomass_int_IGCC",2090,"capital",1074,0.13
+"153","intermediate generation","biomass","biomass_int_IGCC",2095,"capital",1060,0.13
+"154","intermediate generation","biomass","biomass_int_IGCC",2100,"capital",1047,0.13
+"155","intermediate generation","biomass","biomass_int_IGCC_CCS",1975,"capital",2357,0.13
+"156","intermediate generation","biomass","biomass_int_IGCC_CCS",1990,"capital",2357,0.13
+"157","intermediate generation","biomass","biomass_int_IGCC_CCS",2005,"capital",2357,0.13
+"158","intermediate generation","biomass","biomass_int_IGCC_CCS",2010,"capital",2357,0.13
+"159","intermediate generation","biomass","biomass_int_IGCC_CCS",2015,"capital",2357,0.13
+"160","intermediate generation","biomass","biomass_int_IGCC_CCS",2020,"capital",2235,0.13
+"161","intermediate generation","biomass","biomass_int_IGCC_CCS",2025,"capital",2124,0.13
+"162","intermediate generation","biomass","biomass_int_IGCC_CCS",2030,"capital",2024,0.13
+"163","intermediate generation","biomass","biomass_int_IGCC_CCS",2035,"capital",1934,0.13
+"164","intermediate generation","biomass","biomass_int_IGCC_CCS",2040,"capital",1853,0.13
+"165","intermediate generation","biomass","biomass_int_IGCC_CCS",2045,"capital",1779,0.13
+"166","intermediate generation","biomass","biomass_int_IGCC_CCS",2050,"capital",1712,0.13
+"167","intermediate generation","biomass","biomass_int_IGCC_CCS",2055,"capital",1652,0.13
+"168","intermediate generation","biomass","biomass_int_IGCC_CCS",2060,"capital",1597,0.13
+"169","intermediate generation","biomass","biomass_int_IGCC_CCS",2065,"capital",1548,0.13
+"170","intermediate generation","biomass","biomass_int_IGCC_CCS",2070,"capital",1503,0.13
+"171","intermediate generation","biomass","biomass_int_IGCC_CCS",2075,"capital",1463,0.13
+"172","intermediate generation","biomass","biomass_int_IGCC_CCS",2080,"capital",1427,0.13
+"173","intermediate generation","biomass","biomass_int_IGCC_CCS",2085,"capital",1394,0.13
+"174","intermediate generation","biomass","biomass_int_IGCC_CCS",2090,"capital",1364,0.13
+"175","intermediate generation","biomass","biomass_int_IGCC_CCS",2095,"capital",1337,0.13
+"176","intermediate generation","biomass","biomass_int_IGCC_CCS",2100,"capital",1313,0.13
+"177","base load generation","coal","coal_base_conv pul",1975,"capital",1015,0.13
+"178","base load generation","coal","coal_base_conv pul",1990,"capital",1015,0.13
+"179","base load generation","coal","coal_base_conv pul",2005,"capital",1015,0.13
+"180","base load generation","coal","coal_base_conv pul",2010,"capital",1015,0.13
+"181","base load generation","coal","coal_base_conv pul",2015,"capital",1015,0.13
+"182","base load generation","coal","coal_base_conv pul",2020,"capital",999,0.13
+"183","base load generation","coal","coal_base_conv pul",2025,"capital",985,0.13
+"184","base load generation","coal","coal_base_conv pul",2030,"capital",972,0.13
+"185","base load generation","coal","coal_base_conv pul",2035,"capital",961,0.13
+"186","base load generation","coal","coal_base_conv pul",2040,"capital",950,0.13
+"187","base load generation","coal","coal_base_conv pul",2045,"capital",941,0.13
+"188","base load generation","coal","coal_base_conv pul",2050,"capital",932,0.13
+"189","base load generation","coal","coal_base_conv pul",2055,"capital",925,0.13
+"190","base load generation","coal","coal_base_conv pul",2060,"capital",918,0.13
+"191","base load generation","coal","coal_base_conv pul",2065,"capital",911,0.13
+"192","base load generation","coal","coal_base_conv pul",2070,"capital",906,0.13
+"193","base load generation","coal","coal_base_conv pul",2075,"capital",901,0.13
+"194","base load generation","coal","coal_base_conv pul",2080,"capital",896,0.13
+"195","base load generation","coal","coal_base_conv pul",2085,"capital",892,0.13
+"196","base load generation","coal","coal_base_conv pul",2090,"capital",888,0.13
+"197","base load generation","coal","coal_base_conv pul",2095,"capital",885,0.13
+"198","base load generation","coal","coal_base_conv pul",2100,"capital",881,0.13
+"199","base load generation","coal","coal_base_conv pul_CCS",1975,"capital",1553,0.13
+"200","base load generation","coal","coal_base_conv pul_CCS",1990,"capital",1553,0.13
+"201","base load generation","coal","coal_base_conv pul_CCS",2005,"capital",1553,0.13
+"202","base load generation","coal","coal_base_conv pul_CCS",2010,"capital",1553,0.13
+"203","base load generation","coal","coal_base_conv pul_CCS",2015,"capital",1553,0.13
+"204","base load generation","coal","coal_base_conv pul_CCS",2020,"capital",1530,0.13
+"205","base load generation","coal","coal_base_conv pul_CCS",2025,"capital",1509,0.13
+"206","base load generation","coal","coal_base_conv pul_CCS",2030,"capital",1488,0.13
+"207","base load generation","coal","coal_base_conv pul_CCS",2035,"capital",1468,0.13
+"208","base load generation","coal","coal_base_conv pul_CCS",2040,"capital",1450,0.13
+"209","base load generation","coal","coal_base_conv pul_CCS",2045,"capital",1432,0.13
+"210","base load generation","coal","coal_base_conv pul_CCS",2050,"capital",1415,0.13
+"211","base load generation","coal","coal_base_conv pul_CCS",2055,"capital",1399,0.13
+"212","base load generation","coal","coal_base_conv pul_CCS",2060,"capital",1384,0.13
+"213","base load generation","coal","coal_base_conv pul_CCS",2065,"capital",1369,0.13
+"214","base load generation","coal","coal_base_conv pul_CCS",2070,"capital",1355,0.13
+"215","base load generation","coal","coal_base_conv pul_CCS",2075,"capital",1342,0.13
+"216","base load generation","coal","coal_base_conv pul_CCS",2080,"capital",1330,0.13
+"217","base load generation","coal","coal_base_conv pul_CCS",2085,"capital",1318,0.13
+"218","base load generation","coal","coal_base_conv pul_CCS",2090,"capital",1307,0.13
+"219","base load generation","coal","coal_base_conv pul_CCS",2095,"capital",1296,0.13
+"220","base load generation","coal","coal_base_conv pul_CCS",2100,"capital",1286,0.13
+"221","base load generation","coal","coal_base_IGCC",1975,"capital",1089,0.13
+"222","base load generation","coal","coal_base_IGCC",1990,"capital",1089,0.13
+"223","base load generation","coal","coal_base_IGCC",2005,"capital",1089,0.13
+"224","base load generation","coal","coal_base_IGCC",2010,"capital",1089,0.13
+"225","base load generation","coal","coal_base_IGCC",2015,"capital",1089,0.13
+"226","base load generation","coal","coal_base_IGCC",2020,"capital",1052,0.13
+"227","base load generation","coal","coal_base_IGCC",2025,"capital",1020,0.13
+"228","base load generation","coal","coal_base_IGCC",2030,"capital",993,0.13
+"229","base load generation","coal","coal_base_IGCC",2035,"capital",970,0.13
+"230","base load generation","coal","coal_base_IGCC",2040,"capital",950,0.13
+"231","base load generation","coal","coal_base_IGCC",2045,"capital",932,0.13
+"232","base load generation","coal","coal_base_IGCC",2050,"capital",917,0.13
+"233","base load generation","coal","coal_base_IGCC",2055,"capital",905,0.13
+"234","base load generation","coal","coal_base_IGCC",2060,"capital",894,0.13
+"235","base load generation","coal","coal_base_IGCC",2065,"capital",884,0.13
+"236","base load generation","coal","coal_base_IGCC",2070,"capital",876,0.13
+"237","base load generation","coal","coal_base_IGCC",2075,"capital",870,0.13
+"238","base load generation","coal","coal_base_IGCC",2080,"capital",864,0.13
+"239","base load generation","coal","coal_base_IGCC",2085,"capital",858,0.13
+"240","base load generation","coal","coal_base_IGCC",2090,"capital",854,0.13
+"241","base load generation","coal","coal_base_IGCC",2095,"capital",850,0.13
+"242","base load generation","coal","coal_base_IGCC",2100,"capital",847,0.13
+"243","base load generation","coal","coal_base_IGCC_CCS",1975,"capital",1797,0.13
+"244","base load generation","coal","coal_base_IGCC_CCS",1990,"capital",1797,0.13
+"245","base load generation","coal","coal_base_IGCC_CCS",2005,"capital",1797,0.13
+"246","base load generation","coal","coal_base_IGCC_CCS",2010,"capital",1797,0.13
+"247","base load generation","coal","coal_base_IGCC_CCS",2015,"capital",1797,0.13
+"248","base load generation","coal","coal_base_IGCC_CCS",2020,"capital",1705,0.13
+"249","base load generation","coal","coal_base_IGCC_CCS",2025,"capital",1627,0.13
+"250","base load generation","coal","coal_base_IGCC_CCS",2030,"capital",1559,0.13
+"251","base load generation","coal","coal_base_IGCC_CCS",2035,"capital",1501,0.13
+"252","base load generation","coal","coal_base_IGCC_CCS",2040,"capital",1452,0.13
+"253","base load generation","coal","coal_base_IGCC_CCS",2045,"capital",1409,0.13
+"254","base load generation","coal","coal_base_IGCC_CCS",2050,"capital",1373,0.13
+"255","base load generation","coal","coal_base_IGCC_CCS",2055,"capital",1341,0.13
+"256","base load generation","coal","coal_base_IGCC_CCS",2060,"capital",1314,0.13
+"257","base load generation","coal","coal_base_IGCC_CCS",2065,"capital",1291,0.13
+"258","base load generation","coal","coal_base_IGCC_CCS",2070,"capital",1271,0.13
+"259","base load generation","coal","coal_base_IGCC_CCS",2075,"capital",1254,0.13
+"260","base load generation","coal","coal_base_IGCC_CCS",2080,"capital",1239,0.13
+"261","base load generation","coal","coal_base_IGCC_CCS",2085,"capital",1226,0.13
+"262","base load generation","coal","coal_base_IGCC_CCS",2090,"capital",1216,0.13
+"263","base load generation","coal","coal_base_IGCC_CCS",2095,"capital",1206,0.13
+"264","base load generation","coal","coal_base_IGCC_CCS",2100,"capital",1198,0.13
+"265","intermediate generation","coal","coal_int_conv pul",1975,"capital",1015,0.13
+"266","intermediate generation","coal","coal_int_conv pul",1990,"capital",1015,0.13
+"267","intermediate generation","coal","coal_int_conv pul",2005,"capital",1015,0.13
+"268","intermediate generation","coal","coal_int_conv pul",2010,"capital",1015,0.13
+"269","intermediate generation","coal","coal_int_conv pul",2015,"capital",1015,0.13
+"270","intermediate generation","coal","coal_int_conv pul",2020,"capital",999,0.13
+"271","intermediate generation","coal","coal_int_conv pul",2025,"capital",985,0.13
+"272","intermediate generation","coal","coal_int_conv pul",2030,"capital",972,0.13
+"273","intermediate generation","coal","coal_int_conv pul",2035,"capital",961,0.13
+"274","intermediate generation","coal","coal_int_conv pul",2040,"capital",950,0.13
+"275","intermediate generation","coal","coal_int_conv pul",2045,"capital",941,0.13
+"276","intermediate generation","coal","coal_int_conv pul",2050,"capital",932,0.13
+"277","intermediate generation","coal","coal_int_conv pul",2055,"capital",925,0.13
+"278","intermediate generation","coal","coal_int_conv pul",2060,"capital",918,0.13
+"279","intermediate generation","coal","coal_int_conv pul",2065,"capital",911,0.13
+"280","intermediate generation","coal","coal_int_conv pul",2070,"capital",906,0.13
+"281","intermediate generation","coal","coal_int_conv pul",2075,"capital",901,0.13
+"282","intermediate generation","coal","coal_int_conv pul",2080,"capital",896,0.13
+"283","intermediate generation","coal","coal_int_conv pul",2085,"capital",892,0.13
+"284","intermediate generation","coal","coal_int_conv pul",2090,"capital",888,0.13
+"285","intermediate generation","coal","coal_int_conv pul",2095,"capital",885,0.13
+"286","intermediate generation","coal","coal_int_conv pul",2100,"capital",881,0.13
+"287","intermediate generation","coal","coal_int_conv pul_CCS",1975,"capital",1553,0.13
+"288","intermediate generation","coal","coal_int_conv pul_CCS",1990,"capital",1553,0.13
+"289","intermediate generation","coal","coal_int_conv pul_CCS",2005,"capital",1553,0.13
+"290","intermediate generation","coal","coal_int_conv pul_CCS",2010,"capital",1553,0.13
+"291","intermediate generation","coal","coal_int_conv pul_CCS",2015,"capital",1553,0.13
+"292","intermediate generation","coal","coal_int_conv pul_CCS",2020,"capital",1530,0.13
+"293","intermediate generation","coal","coal_int_conv pul_CCS",2025,"capital",1509,0.13
+"294","intermediate generation","coal","coal_int_conv pul_CCS",2030,"capital",1488,0.13
+"295","intermediate generation","coal","coal_int_conv pul_CCS",2035,"capital",1468,0.13
+"296","intermediate generation","coal","coal_int_conv pul_CCS",2040,"capital",1450,0.13
+"297","intermediate generation","coal","coal_int_conv pul_CCS",2045,"capital",1432,0.13
+"298","intermediate generation","coal","coal_int_conv pul_CCS",2050,"capital",1415,0.13
+"299","intermediate generation","coal","coal_int_conv pul_CCS",2055,"capital",1399,0.13
+"300","intermediate generation","coal","coal_int_conv pul_CCS",2060,"capital",1384,0.13
+"301","intermediate generation","coal","coal_int_conv pul_CCS",2065,"capital",1369,0.13
+"302","intermediate generation","coal","coal_int_conv pul_CCS",2070,"capital",1355,0.13
+"303","intermediate generation","coal","coal_int_conv pul_CCS",2075,"capital",1342,0.13
+"304","intermediate generation","coal","coal_int_conv pul_CCS",2080,"capital",1330,0.13
+"305","intermediate generation","coal","coal_int_conv pul_CCS",2085,"capital",1318,0.13
+"306","intermediate generation","coal","coal_int_conv pul_CCS",2090,"capital",1307,0.13
+"307","intermediate generation","coal","coal_int_conv pul_CCS",2095,"capital",1296,0.13
+"308","intermediate generation","coal","coal_int_conv pul_CCS",2100,"capital",1286,0.13
+"309","intermediate generation","coal","coal_int_IGCC",1975,"capital",1089,0.13
+"310","intermediate generation","coal","coal_int_IGCC",1990,"capital",1089,0.13
+"311","intermediate generation","coal","coal_int_IGCC",2005,"capital",1089,0.13
+"312","intermediate generation","coal","coal_int_IGCC",2010,"capital",1089,0.13
+"313","intermediate generation","coal","coal_int_IGCC",2015,"capital",1089,0.13
+"314","intermediate generation","coal","coal_int_IGCC",2020,"capital",1052,0.13
+"315","intermediate generation","coal","coal_int_IGCC",2025,"capital",1020,0.13
+"316","intermediate generation","coal","coal_int_IGCC",2030,"capital",993,0.13
+"317","intermediate generation","coal","coal_int_IGCC",2035,"capital",970,0.13
+"318","intermediate generation","coal","coal_int_IGCC",2040,"capital",950,0.13
+"319","intermediate generation","coal","coal_int_IGCC",2045,"capital",932,0.13
+"320","intermediate generation","coal","coal_int_IGCC",2050,"capital",917,0.13
+"321","intermediate generation","coal","coal_int_IGCC",2055,"capital",905,0.13
+"322","intermediate generation","coal","coal_int_IGCC",2060,"capital",894,0.13
+"323","intermediate generation","coal","coal_int_IGCC",2065,"capital",884,0.13
+"324","intermediate generation","coal","coal_int_IGCC",2070,"capital",876,0.13
+"325","intermediate generation","coal","coal_int_IGCC",2075,"capital",870,0.13
+"326","intermediate generation","coal","coal_int_IGCC",2080,"capital",864,0.13
+"327","intermediate generation","coal","coal_int_IGCC",2085,"capital",858,0.13
+"328","intermediate generation","coal","coal_int_IGCC",2090,"capital",854,0.13
+"329","intermediate generation","coal","coal_int_IGCC",2095,"capital",850,0.13
+"330","intermediate generation","coal","coal_int_IGCC",2100,"capital",847,0.13
+"331","intermediate generation","coal","coal_int_IGCC_CCS",1975,"capital",1797,0.13
+"332","intermediate generation","coal","coal_int_IGCC_CCS",1990,"capital",1797,0.13
+"333","intermediate generation","coal","coal_int_IGCC_CCS",2005,"capital",1797,0.13
+"334","intermediate generation","coal","coal_int_IGCC_CCS",2010,"capital",1797,0.13
+"335","intermediate generation","coal","coal_int_IGCC_CCS",2015,"capital",1797,0.13
+"336","intermediate generation","coal","coal_int_IGCC_CCS",2020,"capital",1705,0.13
+"337","intermediate generation","coal","coal_int_IGCC_CCS",2025,"capital",1627,0.13
+"338","intermediate generation","coal","coal_int_IGCC_CCS",2030,"capital",1559,0.13
+"339","intermediate generation","coal","coal_int_IGCC_CCS",2035,"capital",1501,0.13
+"340","intermediate generation","coal","coal_int_IGCC_CCS",2040,"capital",1452,0.13
+"341","intermediate generation","coal","coal_int_IGCC_CCS",2045,"capital",1409,0.13
+"342","intermediate generation","coal","coal_int_IGCC_CCS",2050,"capital",1373,0.13
+"343","intermediate generation","coal","coal_int_IGCC_CCS",2055,"capital",1341,0.13
+"344","intermediate generation","coal","coal_int_IGCC_CCS",2060,"capital",1314,0.13
+"345","intermediate generation","coal","coal_int_IGCC_CCS",2065,"capital",1291,0.13
+"346","intermediate generation","coal","coal_int_IGCC_CCS",2070,"capital",1271,0.13
+"347","intermediate generation","coal","coal_int_IGCC_CCS",2075,"capital",1254,0.13
+"348","intermediate generation","coal","coal_int_IGCC_CCS",2080,"capital",1239,0.13
+"349","intermediate generation","coal","coal_int_IGCC_CCS",2085,"capital",1226,0.13
+"350","intermediate generation","coal","coal_int_IGCC_CCS",2090,"capital",1216,0.13
+"351","intermediate generation","coal","coal_int_IGCC_CCS",2095,"capital",1206,0.13
+"352","intermediate generation","coal","coal_int_IGCC_CCS",2100,"capital",1198,0.13
+"353","subpeak generation","coal","coal_subpeak_conv pul",1975,"capital",1015,0.13
+"354","subpeak generation","coal","coal_subpeak_conv pul",1990,"capital",1015,0.13
+"355","subpeak generation","coal","coal_subpeak_conv pul",2005,"capital",1015,0.13
+"356","subpeak generation","coal","coal_subpeak_conv pul",2010,"capital",1015,0.13
+"357","subpeak generation","coal","coal_subpeak_conv pul",2015,"capital",1015,0.13
+"358","subpeak generation","coal","coal_subpeak_conv pul",2020,"capital",999,0.13
+"359","subpeak generation","coal","coal_subpeak_conv pul",2025,"capital",985,0.13
+"360","subpeak generation","coal","coal_subpeak_conv pul",2030,"capital",972,0.13
+"361","subpeak generation","coal","coal_subpeak_conv pul",2035,"capital",961,0.13
+"362","subpeak generation","coal","coal_subpeak_conv pul",2040,"capital",950,0.13
+"363","subpeak generation","coal","coal_subpeak_conv pul",2045,"capital",941,0.13
+"364","subpeak generation","coal","coal_subpeak_conv pul",2050,"capital",932,0.13
+"365","subpeak generation","coal","coal_subpeak_conv pul",2055,"capital",925,0.13
+"366","subpeak generation","coal","coal_subpeak_conv pul",2060,"capital",918,0.13
+"367","subpeak generation","coal","coal_subpeak_conv pul",2065,"capital",911,0.13
+"368","subpeak generation","coal","coal_subpeak_conv pul",2070,"capital",906,0.13
+"369","subpeak generation","coal","coal_subpeak_conv pul",2075,"capital",901,0.13
+"370","subpeak generation","coal","coal_subpeak_conv pul",2080,"capital",896,0.13
+"371","subpeak generation","coal","coal_subpeak_conv pul",2085,"capital",892,0.13
+"372","subpeak generation","coal","coal_subpeak_conv pul",2090,"capital",888,0.13
+"373","subpeak generation","coal","coal_subpeak_conv pul",2095,"capital",885,0.13
+"374","subpeak generation","coal","coal_subpeak_conv pul",2100,"capital",881,0.13
+"375","peak generation","coal","coal_peak_conv pul",1975,"capital",1015,0.13
+"376","peak generation","coal","coal_peak_conv pul",1990,"capital",1015,0.13
+"377","peak generation","coal","coal_peak_conv pul",2005,"capital",1015,0.13
+"378","peak generation","coal","coal_peak_conv pul",2010,"capital",1015,0.13
+"379","peak generation","coal","coal_peak_conv pul",2015,"capital",1015,0.13
+"380","peak generation","coal","coal_peak_conv pul",2020,"capital",999,0.13
+"381","peak generation","coal","coal_peak_conv pul",2025,"capital",985,0.13
+"382","peak generation","coal","coal_peak_conv pul",2030,"capital",972,0.13
+"383","peak generation","coal","coal_peak_conv pul",2035,"capital",961,0.13
+"384","peak generation","coal","coal_peak_conv pul",2040,"capital",950,0.13
+"385","peak generation","coal","coal_peak_conv pul",2045,"capital",941,0.13
+"386","peak generation","coal","coal_peak_conv pul",2050,"capital",932,0.13
+"387","peak generation","coal","coal_peak_conv pul",2055,"capital",925,0.13
+"388","peak generation","coal","coal_peak_conv pul",2060,"capital",918,0.13
+"389","peak generation","coal","coal_peak_conv pul",2065,"capital",911,0.13
+"390","peak generation","coal","coal_peak_conv pul",2070,"capital",906,0.13
+"391","peak generation","coal","coal_peak_conv pul",2075,"capital",901,0.13
+"392","peak generation","coal","coal_peak_conv pul",2080,"capital",896,0.13
+"393","peak generation","coal","coal_peak_conv pul",2085,"capital",892,0.13
+"394","peak generation","coal","coal_peak_conv pul",2090,"capital",888,0.13
+"395","peak generation","coal","coal_peak_conv pul",2095,"capital",885,0.13
+"396","peak generation","coal","coal_peak_conv pul",2100,"capital",881,0.13
+"397","base load generation","gas","gas_base_CC",1975,"capital",288,0.13
+"398","base load generation","gas","gas_base_CC",1990,"capital",288,0.13
+"399","base load generation","gas","gas_base_CC",2005,"capital",288,0.13
+"400","base load generation","gas","gas_base_CC",2010,"capital",288,0.13
+"401","base load generation","gas","gas_base_CC",2015,"capital",288,0.13
+"402","base load generation","gas","gas_base_CC",2020,"capital",262,0.13
+"403","base load generation","gas","gas_base_CC",2025,"capital",246,0.13
+"404","base load generation","gas","gas_base_CC",2030,"capital",235,0.13
+"405","base load generation","gas","gas_base_CC",2035,"capital",227,0.13
+"406","base load generation","gas","gas_base_CC",2040,"capital",222,0.13
+"407","base load generation","gas","gas_base_CC",2045,"capital",219,0.13
+"408","base load generation","gas","gas_base_CC",2050,"capital",217,0.13
+"409","base load generation","gas","gas_base_CC",2055,"capital",216,0.13
+"410","base load generation","gas","gas_base_CC",2060,"capital",215,0.13
+"411","base load generation","gas","gas_base_CC",2065,"capital",214,0.13
+"412","base load generation","gas","gas_base_CC",2070,"capital",214,0.13
+"413","base load generation","gas","gas_base_CC",2075,"capital",214,0.13
+"414","base load generation","gas","gas_base_CC",2080,"capital",213,0.13
+"415","base load generation","gas","gas_base_CC",2085,"capital",213,0.13
+"416","base load generation","gas","gas_base_CC",2090,"capital",213,0.13
+"417","base load generation","gas","gas_base_CC",2095,"capital",213,0.13
+"418","base load generation","gas","gas_base_CC",2100,"capital",213,0.13
+"419","base load generation","gas","gas_base_CC_CCS",1975,"capital",601,0.13
+"420","base load generation","gas","gas_base_CC_CCS",1990,"capital",601,0.13
+"421","base load generation","gas","gas_base_CC_CCS",2005,"capital",601,0.13
+"422","base load generation","gas","gas_base_CC_CCS",2010,"capital",601,0.13
+"423","base load generation","gas","gas_base_CC_CCS",2015,"capital",601,0.13
+"424","base load generation","gas","gas_base_CC_CCS",2020,"capital",577,0.13
+"425","base load generation","gas","gas_base_CC_CCS",2025,"capital",556,0.13
+"426","base load generation","gas","gas_base_CC_CCS",2030,"capital",537,0.13
+"427","base load generation","gas","gas_base_CC_CCS",2035,"capital",522,0.13
+"428","base load generation","gas","gas_base_CC_CCS",2040,"capital",508,0.13
+"429","base load generation","gas","gas_base_CC_CCS",2045,"capital",497,0.13
+"430","base load generation","gas","gas_base_CC_CCS",2050,"capital",487,0.13
+"431","base load generation","gas","gas_base_CC_CCS",2055,"capital",478,0.13
+"432","base load generation","gas","gas_base_CC_CCS",2060,"capital",471,0.13
+"433","base load generation","gas","gas_base_CC_CCS",2065,"capital",465,0.13
+"434","base load generation","gas","gas_base_CC_CCS",2070,"capital",460,0.13
+"435","base load generation","gas","gas_base_CC_CCS",2075,"capital",455,0.13
+"436","base load generation","gas","gas_base_CC_CCS",2080,"capital",451,0.13
+"437","base load generation","gas","gas_base_CC_CCS",2085,"capital",448,0.13
+"438","base load generation","gas","gas_base_CC_CCS",2090,"capital",445,0.13
+"439","base load generation","gas","gas_base_CC_CCS",2095,"capital",442,0.13
+"440","base load generation","gas","gas_base_CC_CCS",2100,"capital",440,0.13
+"441","intermediate generation","gas","gas_int_CC",1975,"capital",288,0.13
+"442","intermediate generation","gas","gas_int_CC",1990,"capital",288,0.13
+"443","intermediate generation","gas","gas_int_CC",2005,"capital",288,0.13
+"444","intermediate generation","gas","gas_int_CC",2010,"capital",288,0.13
+"445","intermediate generation","gas","gas_int_CC",2015,"capital",288,0.13
+"446","intermediate generation","gas","gas_int_CC",2020,"capital",262,0.13
+"447","intermediate generation","gas","gas_int_CC",2025,"capital",246,0.13
+"448","intermediate generation","gas","gas_int_CC",2030,"capital",235,0.13
+"449","intermediate generation","gas","gas_int_CC",2035,"capital",227,0.13
+"450","intermediate generation","gas","gas_int_CC",2040,"capital",222,0.13
+"451","intermediate generation","gas","gas_int_CC",2045,"capital",219,0.13
+"452","intermediate generation","gas","gas_int_CC",2050,"capital",217,0.13
+"453","intermediate generation","gas","gas_int_CC",2055,"capital",216,0.13
+"454","intermediate generation","gas","gas_int_CC",2060,"capital",215,0.13
+"455","intermediate generation","gas","gas_int_CC",2065,"capital",214,0.13
+"456","intermediate generation","gas","gas_int_CC",2070,"capital",214,0.13
+"457","intermediate generation","gas","gas_int_CC",2075,"capital",214,0.13
+"458","intermediate generation","gas","gas_int_CC",2080,"capital",213,0.13
+"459","intermediate generation","gas","gas_int_CC",2085,"capital",213,0.13
+"460","intermediate generation","gas","gas_int_CC",2090,"capital",213,0.13
+"461","intermediate generation","gas","gas_int_CC",2095,"capital",213,0.13
+"462","intermediate generation","gas","gas_int_CC",2100,"capital",213,0.13
+"463","intermediate generation","gas","gas_int_CC_CCS",1975,"capital",601,0.13
+"464","intermediate generation","gas","gas_int_CC_CCS",1990,"capital",601,0.13
+"465","intermediate generation","gas","gas_int_CC_CCS",2005,"capital",601,0.13
+"466","intermediate generation","gas","gas_int_CC_CCS",2010,"capital",601,0.13
+"467","intermediate generation","gas","gas_int_CC_CCS",2015,"capital",601,0.13
+"468","intermediate generation","gas","gas_int_CC_CCS",2020,"capital",577,0.13
+"469","intermediate generation","gas","gas_int_CC_CCS",2025,"capital",556,0.13
+"470","intermediate generation","gas","gas_int_CC_CCS",2030,"capital",537,0.13
+"471","intermediate generation","gas","gas_int_CC_CCS",2035,"capital",522,0.13
+"472","intermediate generation","gas","gas_int_CC_CCS",2040,"capital",508,0.13
+"473","intermediate generation","gas","gas_int_CC_CCS",2045,"capital",497,0.13
+"474","intermediate generation","gas","gas_int_CC_CCS",2050,"capital",487,0.13
+"475","intermediate generation","gas","gas_int_CC_CCS",2055,"capital",478,0.13
+"476","intermediate generation","gas","gas_int_CC_CCS",2060,"capital",471,0.13
+"477","intermediate generation","gas","gas_int_CC_CCS",2065,"capital",465,0.13
+"478","intermediate generation","gas","gas_int_CC_CCS",2070,"capital",460,0.13
+"479","intermediate generation","gas","gas_int_CC_CCS",2075,"capital",455,0.13
+"480","intermediate generation","gas","gas_int_CC_CCS",2080,"capital",451,0.13
+"481","intermediate generation","gas","gas_int_CC_CCS",2085,"capital",448,0.13
+"482","intermediate generation","gas","gas_int_CC_CCS",2090,"capital",445,0.13
+"483","intermediate generation","gas","gas_int_CC_CCS",2095,"capital",442,0.13
+"484","intermediate generation","gas","gas_int_CC_CCS",2100,"capital",440,0.13
+"485","subpeak generation","gas","gas_subpeak_steam/CT",1975,"capital",246,0.13
+"486","subpeak generation","gas","gas_subpeak_steam/CT",1990,"capital",246,0.13
+"487","subpeak generation","gas","gas_subpeak_steam/CT",2005,"capital",246,0.13
+"488","subpeak generation","gas","gas_subpeak_steam/CT",2010,"capital",246,0.13
+"489","subpeak generation","gas","gas_subpeak_steam/CT",2015,"capital",246,0.13
+"490","subpeak generation","gas","gas_subpeak_steam/CT",2020,"capital",239,0.13
+"491","subpeak generation","gas","gas_subpeak_steam/CT",2025,"capital",232,0.13
+"492","subpeak generation","gas","gas_subpeak_steam/CT",2030,"capital",228,0.13
+"493","subpeak generation","gas","gas_subpeak_steam/CT",2035,"capital",224,0.13
+"494","subpeak generation","gas","gas_subpeak_steam/CT",2040,"capital",221,0.13
+"495","subpeak generation","gas","gas_subpeak_steam/CT",2045,"capital",219,0.13
+"496","subpeak generation","gas","gas_subpeak_steam/CT",2050,"capital",218,0.13
+"497","subpeak generation","gas","gas_subpeak_steam/CT",2055,"capital",216,0.13
+"498","subpeak generation","gas","gas_subpeak_steam/CT",2060,"capital",215,0.13
+"499","subpeak generation","gas","gas_subpeak_steam/CT",2065,"capital",214,0.13
+"500","subpeak generation","gas","gas_subpeak_steam/CT",2070,"capital",214,0.13
+"501","subpeak generation","gas","gas_subpeak_steam/CT",2075,"capital",213,0.13
+"502","subpeak generation","gas","gas_subpeak_steam/CT",2080,"capital",213,0.13
+"503","subpeak generation","gas","gas_subpeak_steam/CT",2085,"capital",213,0.13
+"504","subpeak generation","gas","gas_subpeak_steam/CT",2090,"capital",213,0.13
+"505","subpeak generation","gas","gas_subpeak_steam/CT",2095,"capital",212,0.13
+"506","subpeak generation","gas","gas_subpeak_steam/CT",2100,"capital",212,0.13
+"507","subpeak generation","gas","gas_subpeak_CC",1975,"capital",288,0.13
+"508","subpeak generation","gas","gas_subpeak_CC",1990,"capital",288,0.13
+"509","subpeak generation","gas","gas_subpeak_CC",2005,"capital",288,0.13
+"510","subpeak generation","gas","gas_subpeak_CC",2010,"capital",288,0.13
+"511","subpeak generation","gas","gas_subpeak_CC",2015,"capital",288,0.13
+"512","subpeak generation","gas","gas_subpeak_CC",2020,"capital",262,0.13
+"513","subpeak generation","gas","gas_subpeak_CC",2025,"capital",246,0.13
+"514","subpeak generation","gas","gas_subpeak_CC",2030,"capital",235,0.13
+"515","subpeak generation","gas","gas_subpeak_CC",2035,"capital",227,0.13
+"516","subpeak generation","gas","gas_subpeak_CC",2040,"capital",222,0.13
+"517","subpeak generation","gas","gas_subpeak_CC",2045,"capital",219,0.13
+"518","subpeak generation","gas","gas_subpeak_CC",2050,"capital",217,0.13
+"519","subpeak generation","gas","gas_subpeak_CC",2055,"capital",216,0.13
+"520","subpeak generation","gas","gas_subpeak_CC",2060,"capital",215,0.13
+"521","subpeak generation","gas","gas_subpeak_CC",2065,"capital",214,0.13
+"522","subpeak generation","gas","gas_subpeak_CC",2070,"capital",214,0.13
+"523","subpeak generation","gas","gas_subpeak_CC",2075,"capital",214,0.13
+"524","subpeak generation","gas","gas_subpeak_CC",2080,"capital",213,0.13
+"525","subpeak generation","gas","gas_subpeak_CC",2085,"capital",213,0.13
+"526","subpeak generation","gas","gas_subpeak_CC",2090,"capital",213,0.13
+"527","subpeak generation","gas","gas_subpeak_CC",2095,"capital",213,0.13
+"528","subpeak generation","gas","gas_subpeak_CC",2100,"capital",213,0.13
+"529","subpeak generation","gas","gas_subpeak_CC_CCS",1975,"capital",601,0.13
+"530","subpeak generation","gas","gas_subpeak_CC_CCS",1990,"capital",601,0.13
+"531","subpeak generation","gas","gas_subpeak_CC_CCS",2005,"capital",601,0.13
+"532","subpeak generation","gas","gas_subpeak_CC_CCS",2010,"capital",601,0.13
+"533","subpeak generation","gas","gas_subpeak_CC_CCS",2015,"capital",601,0.13
+"534","subpeak generation","gas","gas_subpeak_CC_CCS",2020,"capital",577,0.13
+"535","subpeak generation","gas","gas_subpeak_CC_CCS",2025,"capital",556,0.13
+"536","subpeak generation","gas","gas_subpeak_CC_CCS",2030,"capital",537,0.13
+"537","subpeak generation","gas","gas_subpeak_CC_CCS",2035,"capital",522,0.13
+"538","subpeak generation","gas","gas_subpeak_CC_CCS",2040,"capital",508,0.13
+"539","subpeak generation","gas","gas_subpeak_CC_CCS",2045,"capital",497,0.13
+"540","subpeak generation","gas","gas_subpeak_CC_CCS",2050,"capital",487,0.13
+"541","subpeak generation","gas","gas_subpeak_CC_CCS",2055,"capital",478,0.13
+"542","subpeak generation","gas","gas_subpeak_CC_CCS",2060,"capital",471,0.13
+"543","subpeak generation","gas","gas_subpeak_CC_CCS",2065,"capital",465,0.13
+"544","subpeak generation","gas","gas_subpeak_CC_CCS",2070,"capital",460,0.13
+"545","subpeak generation","gas","gas_subpeak_CC_CCS",2075,"capital",455,0.13
+"546","subpeak generation","gas","gas_subpeak_CC_CCS",2080,"capital",451,0.13
+"547","subpeak generation","gas","gas_subpeak_CC_CCS",2085,"capital",448,0.13
+"548","subpeak generation","gas","gas_subpeak_CC_CCS",2090,"capital",445,0.13
+"549","subpeak generation","gas","gas_subpeak_CC_CCS",2095,"capital",442,0.13
+"550","subpeak generation","gas","gas_subpeak_CC_CCS",2100,"capital",440,0.13
+"551","peak generation","gas","gas_peak_steam/CT",1975,"capital",246,0.13
+"552","peak generation","gas","gas_peak_steam/CT",1990,"capital",246,0.13
+"553","peak generation","gas","gas_peak_steam/CT",2005,"capital",246,0.13
+"554","peak generation","gas","gas_peak_steam/CT",2010,"capital",246,0.13
+"555","peak generation","gas","gas_peak_steam/CT",2015,"capital",246,0.13
+"556","peak generation","gas","gas_peak_steam/CT",2020,"capital",239,0.13
+"557","peak generation","gas","gas_peak_steam/CT",2025,"capital",232,0.13
+"558","peak generation","gas","gas_peak_steam/CT",2030,"capital",228,0.13
+"559","peak generation","gas","gas_peak_steam/CT",2035,"capital",224,0.13
+"560","peak generation","gas","gas_peak_steam/CT",2040,"capital",221,0.13
+"561","peak generation","gas","gas_peak_steam/CT",2045,"capital",219,0.13
+"562","peak generation","gas","gas_peak_steam/CT",2050,"capital",218,0.13
+"563","peak generation","gas","gas_peak_steam/CT",2055,"capital",216,0.13
+"564","peak generation","gas","gas_peak_steam/CT",2060,"capital",215,0.13
+"565","peak generation","gas","gas_peak_steam/CT",2065,"capital",214,0.13
+"566","peak generation","gas","gas_peak_steam/CT",2070,"capital",214,0.13
+"567","peak generation","gas","gas_peak_steam/CT",2075,"capital",213,0.13
+"568","peak generation","gas","gas_peak_steam/CT",2080,"capital",213,0.13
+"569","peak generation","gas","gas_peak_steam/CT",2085,"capital",213,0.13
+"570","peak generation","gas","gas_peak_steam/CT",2090,"capital",213,0.13
+"571","peak generation","gas","gas_peak_steam/CT",2095,"capital",212,0.13
+"572","peak generation","gas","gas_peak_steam/CT",2100,"capital",212,0.13
+"573","peak generation","gas","gas_peak_CC",1975,"capital",288,0.13
+"574","peak generation","gas","gas_peak_CC",1990,"capital",288,0.13
+"575","peak generation","gas","gas_peak_CC",2005,"capital",288,0.13
+"576","peak generation","gas","gas_peak_CC",2010,"capital",288,0.13
+"577","peak generation","gas","gas_peak_CC",2015,"capital",288,0.13
+"578","peak generation","gas","gas_peak_CC",2020,"capital",262,0.13
+"579","peak generation","gas","gas_peak_CC",2025,"capital",246,0.13
+"580","peak generation","gas","gas_peak_CC",2030,"capital",235,0.13
+"581","peak generation","gas","gas_peak_CC",2035,"capital",227,0.13
+"582","peak generation","gas","gas_peak_CC",2040,"capital",222,0.13
+"583","peak generation","gas","gas_peak_CC",2045,"capital",219,0.13
+"584","peak generation","gas","gas_peak_CC",2050,"capital",217,0.13
+"585","peak generation","gas","gas_peak_CC",2055,"capital",216,0.13
+"586","peak generation","gas","gas_peak_CC",2060,"capital",215,0.13
+"587","peak generation","gas","gas_peak_CC",2065,"capital",214,0.13
+"588","peak generation","gas","gas_peak_CC",2070,"capital",214,0.13
+"589","peak generation","gas","gas_peak_CC",2075,"capital",214,0.13
+"590","peak generation","gas","gas_peak_CC",2080,"capital",213,0.13
+"591","peak generation","gas","gas_peak_CC",2085,"capital",213,0.13
+"592","peak generation","gas","gas_peak_CC",2090,"capital",213,0.13
+"593","peak generation","gas","gas_peak_CC",2095,"capital",213,0.13
+"594","peak generation","gas","gas_peak_CC",2100,"capital",213,0.13
+"595","peak generation","gas","gas_peak_CC_CCS",1975,"capital",601,0.13
+"596","peak generation","gas","gas_peak_CC_CCS",1990,"capital",601,0.13
+"597","peak generation","gas","gas_peak_CC_CCS",2005,"capital",601,0.13
+"598","peak generation","gas","gas_peak_CC_CCS",2010,"capital",601,0.13
+"599","peak generation","gas","gas_peak_CC_CCS",2015,"capital",601,0.13
+"600","peak generation","gas","gas_peak_CC_CCS",2020,"capital",577,0.13
+"601","peak generation","gas","gas_peak_CC_CCS",2025,"capital",556,0.13
+"602","peak generation","gas","gas_peak_CC_CCS",2030,"capital",537,0.13
+"603","peak generation","gas","gas_peak_CC_CCS",2035,"capital",522,0.13
+"604","peak generation","gas","gas_peak_CC_CCS",2040,"capital",508,0.13
+"605","peak generation","gas","gas_peak_CC_CCS",2045,"capital",497,0.13
+"606","peak generation","gas","gas_peak_CC_CCS",2050,"capital",487,0.13
+"607","peak generation","gas","gas_peak_CC_CCS",2055,"capital",478,0.13
+"608","peak generation","gas","gas_peak_CC_CCS",2060,"capital",471,0.13
+"609","peak generation","gas","gas_peak_CC_CCS",2065,"capital",465,0.13
+"610","peak generation","gas","gas_peak_CC_CCS",2070,"capital",460,0.13
+"611","peak generation","gas","gas_peak_CC_CCS",2075,"capital",455,0.13
+"612","peak generation","gas","gas_peak_CC_CCS",2080,"capital",451,0.13
+"613","peak generation","gas","gas_peak_CC_CCS",2085,"capital",448,0.13
+"614","peak generation","gas","gas_peak_CC_CCS",2090,"capital",445,0.13
+"615","peak generation","gas","gas_peak_CC_CCS",2095,"capital",442,0.13
+"616","peak generation","gas","gas_peak_CC_CCS",2100,"capital",440,0.13
+"617","base load generation","geothermal","geo_base",1975,"capital",1335,0.13
+"618","base load generation","geothermal","geo_base",1990,"capital",1335,0.13
+"619","base load generation","geothermal","geo_base",2005,"capital",1335,0.13
+"620","base load generation","geothermal","geo_base",2010,"capital",1335,0.13
+"621","base load generation","geothermal","geo_base",2015,"capital",1335,0.13
+"622","base load generation","geothermal","geo_base",2020,"capital",1251,0.13
+"623","base load generation","geothermal","geo_base",2025,"capital",1183,0.13
+"624","base load generation","geothermal","geo_base",2030,"capital",1127,0.13
+"625","base load generation","geothermal","geo_base",2035,"capital",1082,0.13
+"626","base load generation","geothermal","geo_base",2040,"capital",1045,0.13
+"627","base load generation","geothermal","geo_base",2045,"capital",1015,0.13
+"628","base load generation","geothermal","geo_base",2050,"capital",990,0.13
+"629","base load generation","geothermal","geo_base",2055,"capital",970,0.13
+"630","base load generation","geothermal","geo_base",2060,"capital",954,0.13
+"631","base load generation","geothermal","geo_base",2065,"capital",940,0.13
+"632","base load generation","geothermal","geo_base",2070,"capital",929,0.13
+"633","base load generation","geothermal","geo_base",2075,"capital",920,0.13
+"634","base load generation","geothermal","geo_base",2080,"capital",913,0.13
+"635","base load generation","geothermal","geo_base",2085,"capital",907,0.13
+"636","base load generation","geothermal","geo_base",2090,"capital",902,0.13
+"637","base load generation","geothermal","geo_base",2095,"capital",899,0.13
+"638","base load generation","geothermal","geo_base",2100,"capital",895,0.13
+"639","base load generation","nuclear","nuc_base_Gen II",1975,"capital",1650,0.13
+"640","base load generation","nuclear","nuc_base_Gen II",1990,"capital",1650,0.13
+"641","base load generation","nuclear","nuc_base_Gen II",2005,"capital",1650,0.13
+"642","base load generation","nuclear","nuc_base_Gen II",2010,"capital",1650,0.13
+"643","base load generation","nuclear","nuc_base_Gen II",2015,"capital",1704,0.13
+"644","base load generation","nuclear","nuc_base_Gen II",2020,"capital",1704,0.13
+"645","base load generation","nuclear","nuc_base_Gen II",2025,"capital",1704,0.13
+"646","base load generation","nuclear","nuc_base_Gen II",2030,"capital",1704,0.13
+"647","base load generation","nuclear","nuc_base_Gen II",2035,"capital",1704,0.13
+"648","base load generation","nuclear","nuc_base_Gen II",2040,"capital",1704,0.13
+"649","base load generation","nuclear","nuc_base_Gen II",2045,"capital",1704,0.13
+"650","base load generation","nuclear","nuc_base_Gen II",2050,"capital",1704,0.13
+"651","base load generation","nuclear","nuc_base_Gen II",2055,"capital",1704,0.13
+"652","base load generation","nuclear","nuc_base_Gen II",2060,"capital",1704,0.13
+"653","base load generation","nuclear","nuc_base_Gen II",2065,"capital",1704,0.13
+"654","base load generation","nuclear","nuc_base_Gen II",2070,"capital",1704,0.13
+"655","base load generation","nuclear","nuc_base_Gen II",2075,"capital",1704,0.13
+"656","base load generation","nuclear","nuc_base_Gen II",2080,"capital",1704,0.13
+"657","base load generation","nuclear","nuc_base_Gen II",2085,"capital",1704,0.13
+"658","base load generation","nuclear","nuc_base_Gen II",2090,"capital",1704,0.13
+"659","base load generation","nuclear","nuc_base_Gen II",2095,"capital",1704,0.13
+"660","base load generation","nuclear","nuc_base_Gen II",2100,"capital",1704,0.13
+"661","base load generation","nuclear","nuc_base_Gen III",1975,"capital",1705,0.13
+"662","base load generation","nuclear","nuc_base_Gen III",1990,"capital",1705,0.13
+"663","base load generation","nuclear","nuc_base_Gen III",2005,"capital",1705,0.13
+"664","base load generation","nuclear","nuc_base_Gen III",2010,"capital",1705,0.13
+"665","base load generation","nuclear","nuc_base_Gen III",2015,"capital",1705,0.13
+"666","base load generation","nuclear","nuc_base_Gen III",2020,"capital",1675,0.13
+"667","base load generation","nuclear","nuc_base_Gen III",2025,"capital",1646,0.13
+"668","base load generation","nuclear","nuc_base_Gen III",2030,"capital",1619,0.13
+"669","base load generation","nuclear","nuc_base_Gen III",2035,"capital",1593,0.13
+"670","base load generation","nuclear","nuc_base_Gen III",2040,"capital",1568,0.13
+"671","base load generation","nuclear","nuc_base_Gen III",2045,"capital",1545,0.13
+"672","base load generation","nuclear","nuc_base_Gen III",2050,"capital",1523,0.13
+"673","base load generation","nuclear","nuc_base_Gen III",2055,"capital",1502,0.13
+"674","base load generation","nuclear","nuc_base_Gen III",2060,"capital",1481,0.13
+"675","base load generation","nuclear","nuc_base_Gen III",2065,"capital",1462,0.13
+"676","base load generation","nuclear","nuc_base_Gen III",2070,"capital",1444,0.13
+"677","base load generation","nuclear","nuc_base_Gen III",2075,"capital",1427,0.13
+"678","base load generation","nuclear","nuc_base_Gen III",2080,"capital",1410,0.13
+"679","base load generation","nuclear","nuc_base_Gen III",2085,"capital",1395,0.13
+"680","base load generation","nuclear","nuc_base_Gen III",2090,"capital",1380,0.13
+"681","base load generation","nuclear","nuc_base_Gen III",2095,"capital",1366,0.13
+"682","base load generation","nuclear","nuc_base_Gen III",2100,"capital",1352,0.13
+"683","base load generation","refined liquids","refined liquids_base_steam/CT",1975,"capital",246,0.13
+"684","base load generation","refined liquids","refined liquids_base_steam/CT",1990,"capital",246,0.13
+"685","base load generation","refined liquids","refined liquids_base_steam/CT",2005,"capital",246,0.13
+"686","base load generation","refined liquids","refined liquids_base_steam/CT",2010,"capital",246,0.13
+"687","base load generation","refined liquids","refined liquids_base_steam/CT",2015,"capital",246,0.13
+"688","base load generation","refined liquids","refined liquids_base_steam/CT",2020,"capital",239,0.13
+"689","base load generation","refined liquids","refined liquids_base_steam/CT",2025,"capital",232,0.13
+"690","base load generation","refined liquids","refined liquids_base_steam/CT",2030,"capital",228,0.13
+"691","base load generation","refined liquids","refined liquids_base_steam/CT",2035,"capital",224,0.13
+"692","base load generation","refined liquids","refined liquids_base_steam/CT",2040,"capital",221,0.13
+"693","base load generation","refined liquids","refined liquids_base_steam/CT",2045,"capital",219,0.13
+"694","base load generation","refined liquids","refined liquids_base_steam/CT",2050,"capital",218,0.13
+"695","base load generation","refined liquids","refined liquids_base_steam/CT",2055,"capital",216,0.13
+"696","base load generation","refined liquids","refined liquids_base_steam/CT",2060,"capital",215,0.13
+"697","base load generation","refined liquids","refined liquids_base_steam/CT",2065,"capital",214,0.13
+"698","base load generation","refined liquids","refined liquids_base_steam/CT",2070,"capital",214,0.13
+"699","base load generation","refined liquids","refined liquids_base_steam/CT",2075,"capital",213,0.13
+"700","base load generation","refined liquids","refined liquids_base_steam/CT",2080,"capital",213,0.13
+"701","base load generation","refined liquids","refined liquids_base_steam/CT",2085,"capital",213,0.13
+"702","base load generation","refined liquids","refined liquids_base_steam/CT",2090,"capital",213,0.13
+"703","base load generation","refined liquids","refined liquids_base_steam/CT",2095,"capital",212,0.13
+"704","base load generation","refined liquids","refined liquids_base_steam/CT",2100,"capital",212,0.13
+"705","base load generation","refined liquids","refined liquids_base_CC",1975,"capital",288,0.13
+"706","base load generation","refined liquids","refined liquids_base_CC",1990,"capital",288,0.13
+"707","base load generation","refined liquids","refined liquids_base_CC",2005,"capital",288,0.13
+"708","base load generation","refined liquids","refined liquids_base_CC",2010,"capital",288,0.13
+"709","base load generation","refined liquids","refined liquids_base_CC",2015,"capital",288,0.13
+"710","base load generation","refined liquids","refined liquids_base_CC",2020,"capital",262,0.13
+"711","base load generation","refined liquids","refined liquids_base_CC",2025,"capital",246,0.13
+"712","base load generation","refined liquids","refined liquids_base_CC",2030,"capital",235,0.13
+"713","base load generation","refined liquids","refined liquids_base_CC",2035,"capital",227,0.13
+"714","base load generation","refined liquids","refined liquids_base_CC",2040,"capital",222,0.13
+"715","base load generation","refined liquids","refined liquids_base_CC",2045,"capital",219,0.13
+"716","base load generation","refined liquids","refined liquids_base_CC",2050,"capital",217,0.13
+"717","base load generation","refined liquids","refined liquids_base_CC",2055,"capital",216,0.13
+"718","base load generation","refined liquids","refined liquids_base_CC",2060,"capital",215,0.13
+"719","base load generation","refined liquids","refined liquids_base_CC",2065,"capital",214,0.13
+"720","base load generation","refined liquids","refined liquids_base_CC",2070,"capital",214,0.13
+"721","base load generation","refined liquids","refined liquids_base_CC",2075,"capital",214,0.13
+"722","base load generation","refined liquids","refined liquids_base_CC",2080,"capital",213,0.13
+"723","base load generation","refined liquids","refined liquids_base_CC",2085,"capital",213,0.13
+"724","base load generation","refined liquids","refined liquids_base_CC",2090,"capital",213,0.13
+"725","base load generation","refined liquids","refined liquids_base_CC",2095,"capital",213,0.13
+"726","base load generation","refined liquids","refined liquids_base_CC",2100,"capital",213,0.13
+"727","base load generation","refined liquids","refined liquids_base_CC_CCS",1975,"capital",716,0.13
+"728","base load generation","refined liquids","refined liquids_base_CC_CCS",1990,"capital",716,0.13
+"729","base load generation","refined liquids","refined liquids_base_CC_CCS",2005,"capital",716,0.13
+"730","base load generation","refined liquids","refined liquids_base_CC_CCS",2010,"capital",716,0.13
+"731","base load generation","refined liquids","refined liquids_base_CC_CCS",2015,"capital",716,0.13
+"732","base load generation","refined liquids","refined liquids_base_CC_CCS",2020,"capital",683,0.13
+"733","base load generation","refined liquids","refined liquids_base_CC_CCS",2025,"capital",655,0.13
+"734","base load generation","refined liquids","refined liquids_base_CC_CCS",2030,"capital",632,0.13
+"735","base load generation","refined liquids","refined liquids_base_CC_CCS",2035,"capital",611,0.13
+"736","base load generation","refined liquids","refined liquids_base_CC_CCS",2040,"capital",594,0.13
+"737","base load generation","refined liquids","refined liquids_base_CC_CCS",2045,"capital",578,0.13
+"738","base load generation","refined liquids","refined liquids_base_CC_CCS",2050,"capital",565,0.13
+"739","base load generation","refined liquids","refined liquids_base_CC_CCS",2055,"capital",554,0.13
+"740","base load generation","refined liquids","refined liquids_base_CC_CCS",2060,"capital",545,0.13
+"741","base load generation","refined liquids","refined liquids_base_CC_CCS",2065,"capital",537,0.13
+"742","base load generation","refined liquids","refined liquids_base_CC_CCS",2070,"capital",530,0.13
+"743","base load generation","refined liquids","refined liquids_base_CC_CCS",2075,"capital",523,0.13
+"744","base load generation","refined liquids","refined liquids_base_CC_CCS",2080,"capital",518,0.13
+"745","base load generation","refined liquids","refined liquids_base_CC_CCS",2085,"capital",514,0.13
+"746","base load generation","refined liquids","refined liquids_base_CC_CCS",2090,"capital",510,0.13
+"747","base load generation","refined liquids","refined liquids_base_CC_CCS",2095,"capital",507,0.13
+"748","base load generation","refined liquids","refined liquids_base_CC_CCS",2100,"capital",504,0.13
+"749","intermediate generation","refined liquids","refined liquids_int_steam/CT",1975,"capital",246,0.13
+"750","intermediate generation","refined liquids","refined liquids_int_steam/CT",1990,"capital",246,0.13
+"751","intermediate generation","refined liquids","refined liquids_int_steam/CT",2005,"capital",246,0.13
+"752","intermediate generation","refined liquids","refined liquids_int_steam/CT",2010,"capital",246,0.13
+"753","intermediate generation","refined liquids","refined liquids_int_steam/CT",2015,"capital",246,0.13
+"754","intermediate generation","refined liquids","refined liquids_int_steam/CT",2020,"capital",239,0.13
+"755","intermediate generation","refined liquids","refined liquids_int_steam/CT",2025,"capital",232,0.13
+"756","intermediate generation","refined liquids","refined liquids_int_steam/CT",2030,"capital",228,0.13
+"757","intermediate generation","refined liquids","refined liquids_int_steam/CT",2035,"capital",224,0.13
+"758","intermediate generation","refined liquids","refined liquids_int_steam/CT",2040,"capital",221,0.13
+"759","intermediate generation","refined liquids","refined liquids_int_steam/CT",2045,"capital",219,0.13
+"760","intermediate generation","refined liquids","refined liquids_int_steam/CT",2050,"capital",218,0.13
+"761","intermediate generation","refined liquids","refined liquids_int_steam/CT",2055,"capital",216,0.13
+"762","intermediate generation","refined liquids","refined liquids_int_steam/CT",2060,"capital",215,0.13
+"763","intermediate generation","refined liquids","refined liquids_int_steam/CT",2065,"capital",214,0.13
+"764","intermediate generation","refined liquids","refined liquids_int_steam/CT",2070,"capital",214,0.13
+"765","intermediate generation","refined liquids","refined liquids_int_steam/CT",2075,"capital",213,0.13
+"766","intermediate generation","refined liquids","refined liquids_int_steam/CT",2080,"capital",213,0.13
+"767","intermediate generation","refined liquids","refined liquids_int_steam/CT",2085,"capital",213,0.13
+"768","intermediate generation","refined liquids","refined liquids_int_steam/CT",2090,"capital",213,0.13
+"769","intermediate generation","refined liquids","refined liquids_int_steam/CT",2095,"capital",212,0.13
+"770","intermediate generation","refined liquids","refined liquids_int_steam/CT",2100,"capital",212,0.13
+"771","intermediate generation","refined liquids","refined liquids_int_CC",1975,"capital",288,0.13
+"772","intermediate generation","refined liquids","refined liquids_int_CC",1990,"capital",288,0.13
+"773","intermediate generation","refined liquids","refined liquids_int_CC",2005,"capital",288,0.13
+"774","intermediate generation","refined liquids","refined liquids_int_CC",2010,"capital",288,0.13
+"775","intermediate generation","refined liquids","refined liquids_int_CC",2015,"capital",288,0.13
+"776","intermediate generation","refined liquids","refined liquids_int_CC",2020,"capital",262,0.13
+"777","intermediate generation","refined liquids","refined liquids_int_CC",2025,"capital",246,0.13
+"778","intermediate generation","refined liquids","refined liquids_int_CC",2030,"capital",235,0.13
+"779","intermediate generation","refined liquids","refined liquids_int_CC",2035,"capital",227,0.13
+"780","intermediate generation","refined liquids","refined liquids_int_CC",2040,"capital",222,0.13
+"781","intermediate generation","refined liquids","refined liquids_int_CC",2045,"capital",219,0.13
+"782","intermediate generation","refined liquids","refined liquids_int_CC",2050,"capital",217,0.13
+"783","intermediate generation","refined liquids","refined liquids_int_CC",2055,"capital",216,0.13
+"784","intermediate generation","refined liquids","refined liquids_int_CC",2060,"capital",215,0.13
+"785","intermediate generation","refined liquids","refined liquids_int_CC",2065,"capital",214,0.13
+"786","intermediate generation","refined liquids","refined liquids_int_CC",2070,"capital",214,0.13
+"787","intermediate generation","refined liquids","refined liquids_int_CC",2075,"capital",214,0.13
+"788","intermediate generation","refined liquids","refined liquids_int_CC",2080,"capital",213,0.13
+"789","intermediate generation","refined liquids","refined liquids_int_CC",2085,"capital",213,0.13
+"790","intermediate generation","refined liquids","refined liquids_int_CC",2090,"capital",213,0.13
+"791","intermediate generation","refined liquids","refined liquids_int_CC",2095,"capital",213,0.13
+"792","intermediate generation","refined liquids","refined liquids_int_CC",2100,"capital",213,0.13
+"793","intermediate generation","refined liquids","refined liquids_int_CC_CCS",1975,"capital",716,0.13
+"794","intermediate generation","refined liquids","refined liquids_int_CC_CCS",1990,"capital",716,0.13
+"795","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2005,"capital",716,0.13
+"796","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2010,"capital",716,0.13
+"797","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2015,"capital",716,0.13
+"798","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2020,"capital",683,0.13
+"799","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2025,"capital",655,0.13
+"800","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2030,"capital",632,0.13
+"801","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2035,"capital",611,0.13
+"802","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2040,"capital",594,0.13
+"803","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2045,"capital",578,0.13
+"804","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2050,"capital",565,0.13
+"805","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2055,"capital",554,0.13
+"806","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2060,"capital",545,0.13
+"807","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2065,"capital",537,0.13
+"808","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2070,"capital",530,0.13
+"809","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2075,"capital",523,0.13
+"810","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2080,"capital",518,0.13
+"811","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2085,"capital",514,0.13
+"812","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2090,"capital",510,0.13
+"813","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2095,"capital",507,0.13
+"814","intermediate generation","refined liquids","refined liquids_int_CC_CCS",2100,"capital",504,0.13
+"815","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",1975,"capital",246,0.13
+"816","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",1990,"capital",246,0.13
+"817","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2005,"capital",246,0.13
+"818","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2010,"capital",246,0.13
+"819","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2015,"capital",246,0.13
+"820","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2020,"capital",239,0.13
+"821","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2025,"capital",232,0.13
+"822","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2030,"capital",228,0.13
+"823","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2035,"capital",224,0.13
+"824","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2040,"capital",221,0.13
+"825","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2045,"capital",219,0.13
+"826","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2050,"capital",218,0.13
+"827","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2055,"capital",216,0.13
+"828","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2060,"capital",215,0.13
+"829","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2065,"capital",214,0.13
+"830","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2070,"capital",214,0.13
+"831","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2075,"capital",213,0.13
+"832","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2080,"capital",213,0.13
+"833","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2085,"capital",213,0.13
+"834","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2090,"capital",213,0.13
+"835","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2095,"capital",212,0.13
+"836","subpeak generation","refined liquids","refined liquids_subpeak_steam/CT",2100,"capital",212,0.13
+"837","subpeak generation","refined liquids","refined liquids_subpeak_CC",1975,"capital",288,0.13
+"838","subpeak generation","refined liquids","refined liquids_subpeak_CC",1990,"capital",288,0.13
+"839","subpeak generation","refined liquids","refined liquids_subpeak_CC",2005,"capital",288,0.13
+"840","subpeak generation","refined liquids","refined liquids_subpeak_CC",2010,"capital",288,0.13
+"841","subpeak generation","refined liquids","refined liquids_subpeak_CC",2015,"capital",288,0.13
+"842","subpeak generation","refined liquids","refined liquids_subpeak_CC",2020,"capital",262,0.13
+"843","subpeak generation","refined liquids","refined liquids_subpeak_CC",2025,"capital",246,0.13
+"844","subpeak generation","refined liquids","refined liquids_subpeak_CC",2030,"capital",235,0.13
+"845","subpeak generation","refined liquids","refined liquids_subpeak_CC",2035,"capital",227,0.13
+"846","subpeak generation","refined liquids","refined liquids_subpeak_CC",2040,"capital",222,0.13
+"847","subpeak generation","refined liquids","refined liquids_subpeak_CC",2045,"capital",219,0.13
+"848","subpeak generation","refined liquids","refined liquids_subpeak_CC",2050,"capital",217,0.13
+"849","subpeak generation","refined liquids","refined liquids_subpeak_CC",2055,"capital",216,0.13
+"850","subpeak generation","refined liquids","refined liquids_subpeak_CC",2060,"capital",215,0.13
+"851","subpeak generation","refined liquids","refined liquids_subpeak_CC",2065,"capital",214,0.13
+"852","subpeak generation","refined liquids","refined liquids_subpeak_CC",2070,"capital",214,0.13
+"853","subpeak generation","refined liquids","refined liquids_subpeak_CC",2075,"capital",214,0.13
+"854","subpeak generation","refined liquids","refined liquids_subpeak_CC",2080,"capital",213,0.13
+"855","subpeak generation","refined liquids","refined liquids_subpeak_CC",2085,"capital",213,0.13
+"856","subpeak generation","refined liquids","refined liquids_subpeak_CC",2090,"capital",213,0.13
+"857","subpeak generation","refined liquids","refined liquids_subpeak_CC",2095,"capital",213,0.13
+"858","subpeak generation","refined liquids","refined liquids_subpeak_CC",2100,"capital",213,0.13
+"859","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",1975,"capital",716,0.13
+"860","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",1990,"capital",716,0.13
+"861","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2005,"capital",716,0.13
+"862","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2010,"capital",716,0.13
+"863","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2015,"capital",716,0.13
+"864","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2020,"capital",683,0.13
+"865","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2025,"capital",655,0.13
+"866","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2030,"capital",632,0.13
+"867","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2035,"capital",611,0.13
+"868","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2040,"capital",594,0.13
+"869","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2045,"capital",578,0.13
+"870","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2050,"capital",565,0.13
+"871","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2055,"capital",554,0.13
+"872","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2060,"capital",545,0.13
+"873","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2065,"capital",537,0.13
+"874","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2070,"capital",530,0.13
+"875","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2075,"capital",523,0.13
+"876","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2080,"capital",518,0.13
+"877","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2085,"capital",514,0.13
+"878","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2090,"capital",510,0.13
+"879","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2095,"capital",507,0.13
+"880","subpeak generation","refined liquids","refined liquids_subpeak_CC_CCS",2100,"capital",504,0.13
+"881","peak generation","refined liquids","refined liquids_peak_steam/CT",1975,"capital",246,0.13
+"882","peak generation","refined liquids","refined liquids_peak_steam/CT",1990,"capital",246,0.13
+"883","peak generation","refined liquids","refined liquids_peak_steam/CT",2005,"capital",246,0.13
+"884","peak generation","refined liquids","refined liquids_peak_steam/CT",2010,"capital",246,0.13
+"885","peak generation","refined liquids","refined liquids_peak_steam/CT",2015,"capital",246,0.13
+"886","peak generation","refined liquids","refined liquids_peak_steam/CT",2020,"capital",239,0.13
+"887","peak generation","refined liquids","refined liquids_peak_steam/CT",2025,"capital",232,0.13
+"888","peak generation","refined liquids","refined liquids_peak_steam/CT",2030,"capital",228,0.13
+"889","peak generation","refined liquids","refined liquids_peak_steam/CT",2035,"capital",224,0.13
+"890","peak generation","refined liquids","refined liquids_peak_steam/CT",2040,"capital",221,0.13
+"891","peak generation","refined liquids","refined liquids_peak_steam/CT",2045,"capital",219,0.13
+"892","peak generation","refined liquids","refined liquids_peak_steam/CT",2050,"capital",218,0.13
+"893","peak generation","refined liquids","refined liquids_peak_steam/CT",2055,"capital",216,0.13
+"894","peak generation","refined liquids","refined liquids_peak_steam/CT",2060,"capital",215,0.13
+"895","peak generation","refined liquids","refined liquids_peak_steam/CT",2065,"capital",214,0.13
+"896","peak generation","refined liquids","refined liquids_peak_steam/CT",2070,"capital",214,0.13
+"897","peak generation","refined liquids","refined liquids_peak_steam/CT",2075,"capital",213,0.13
+"898","peak generation","refined liquids","refined liquids_peak_steam/CT",2080,"capital",213,0.13
+"899","peak generation","refined liquids","refined liquids_peak_steam/CT",2085,"capital",213,0.13
+"900","peak generation","refined liquids","refined liquids_peak_steam/CT",2090,"capital",213,0.13
+"901","peak generation","refined liquids","refined liquids_peak_steam/CT",2095,"capital",212,0.13
+"902","peak generation","refined liquids","refined liquids_peak_steam/CT",2100,"capital",212,0.13
+"903","peak generation","refined liquids","refined liquids_peak_CC",1975,"capital",288,0.13
+"904","peak generation","refined liquids","refined liquids_peak_CC",1990,"capital",288,0.13
+"905","peak generation","refined liquids","refined liquids_peak_CC",2005,"capital",288,0.13
+"906","peak generation","refined liquids","refined liquids_peak_CC",2010,"capital",288,0.13
+"907","peak generation","refined liquids","refined liquids_peak_CC",2015,"capital",288,0.13
+"908","peak generation","refined liquids","refined liquids_peak_CC",2020,"capital",262,0.13
+"909","peak generation","refined liquids","refined liquids_peak_CC",2025,"capital",246,0.13
+"910","peak generation","refined liquids","refined liquids_peak_CC",2030,"capital",235,0.13
+"911","peak generation","refined liquids","refined liquids_peak_CC",2035,"capital",227,0.13
+"912","peak generation","refined liquids","refined liquids_peak_CC",2040,"capital",222,0.13
+"913","peak generation","refined liquids","refined liquids_peak_CC",2045,"capital",219,0.13
+"914","peak generation","refined liquids","refined liquids_peak_CC",2050,"capital",217,0.13
+"915","peak generation","refined liquids","refined liquids_peak_CC",2055,"capital",216,0.13
+"916","peak generation","refined liquids","refined liquids_peak_CC",2060,"capital",215,0.13
+"917","peak generation","refined liquids","refined liquids_peak_CC",2065,"capital",214,0.13
+"918","peak generation","refined liquids","refined liquids_peak_CC",2070,"capital",214,0.13
+"919","peak generation","refined liquids","refined liquids_peak_CC",2075,"capital",214,0.13
+"920","peak generation","refined liquids","refined liquids_peak_CC",2080,"capital",213,0.13
+"921","peak generation","refined liquids","refined liquids_peak_CC",2085,"capital",213,0.13
+"922","peak generation","refined liquids","refined liquids_peak_CC",2090,"capital",213,0.13
+"923","peak generation","refined liquids","refined liquids_peak_CC",2095,"capital",213,0.13
+"924","peak generation","refined liquids","refined liquids_peak_CC",2100,"capital",213,0.13
+"925","peak generation","refined liquids","refined liquids_peak_CC_CCS",1975,"capital",716,0.13
+"926","peak generation","refined liquids","refined liquids_peak_CC_CCS",1990,"capital",716,0.13
+"927","peak generation","refined liquids","refined liquids_peak_CC_CCS",2005,"capital",716,0.13
+"928","peak generation","refined liquids","refined liquids_peak_CC_CCS",2010,"capital",716,0.13
+"929","peak generation","refined liquids","refined liquids_peak_CC_CCS",2015,"capital",716,0.13
+"930","peak generation","refined liquids","refined liquids_peak_CC_CCS",2020,"capital",683,0.13
+"931","peak generation","refined liquids","refined liquids_peak_CC_CCS",2025,"capital",655,0.13
+"932","peak generation","refined liquids","refined liquids_peak_CC_CCS",2030,"capital",632,0.13
+"933","peak generation","refined liquids","refined liquids_peak_CC_CCS",2035,"capital",611,0.13
+"934","peak generation","refined liquids","refined liquids_peak_CC_CCS",2040,"capital",594,0.13
+"935","peak generation","refined liquids","refined liquids_peak_CC_CCS",2045,"capital",578,0.13
+"936","peak generation","refined liquids","refined liquids_peak_CC_CCS",2050,"capital",565,0.13
+"937","peak generation","refined liquids","refined liquids_peak_CC_CCS",2055,"capital",554,0.13
+"938","peak generation","refined liquids","refined liquids_peak_CC_CCS",2060,"capital",545,0.13
+"939","peak generation","refined liquids","refined liquids_peak_CC_CCS",2065,"capital",537,0.13
+"940","peak generation","refined liquids","refined liquids_peak_CC_CCS",2070,"capital",530,0.13
+"941","peak generation","refined liquids","refined liquids_peak_CC_CCS",2075,"capital",523,0.13
+"942","peak generation","refined liquids","refined liquids_peak_CC_CCS",2080,"capital",518,0.13
+"943","peak generation","refined liquids","refined liquids_peak_CC_CCS",2085,"capital",514,0.13
+"944","peak generation","refined liquids","refined liquids_peak_CC_CCS",2090,"capital",510,0.13
+"945","peak generation","refined liquids","refined liquids_peak_CC_CCS",2095,"capital",507,0.13
+"946","peak generation","refined liquids","refined liquids_peak_CC_CCS",2100,"capital",504,0.13
+"947","base load generation","solar","PV_base_storage",1975,"capital",1896,0.13
+"948","base load generation","solar","PV_base_storage",1990,"capital",1896,0.13
+"949","base load generation","solar","PV_base_storage",2005,"capital",1896,0.13
+"950","base load generation","solar","PV_base_storage",2010,"capital",1896,0.13
+"951","base load generation","solar","PV_base_storage",2015,"capital",1896,0.13
+"952","base load generation","solar","PV_base_storage",2020,"capital",1533,0.13
+"953","base load generation","solar","PV_base_storage",2025,"capital",1266,0.13
+"954","base load generation","solar","PV_base_storage",2030,"capital",1071,0.13
+"955","base load generation","solar","PV_base_storage",2035,"capital",927,0.13
+"956","base load generation","solar","PV_base_storage",2040,"capital",822,0.13
+"957","base load generation","solar","PV_base_storage",2045,"capital",744,0.13
+"958","base load generation","solar","PV_base_storage",2050,"capital",687,0.13
+"959","base load generation","solar","PV_base_storage",2055,"capital",646,0.13
+"960","base load generation","solar","PV_base_storage",2060,"capital",615,0.13
+"961","base load generation","solar","PV_base_storage",2065,"capital",593,0.13
+"962","base load generation","solar","PV_base_storage",2070,"capital",576,0.13
+"963","base load generation","solar","PV_base_storage",2075,"capital",564,0.13
+"964","base load generation","solar","PV_base_storage",2080,"capital",555,0.13
+"965","base load generation","solar","PV_base_storage",2085,"capital",549,0.13
+"966","base load generation","solar","PV_base_storage",2090,"capital",544,0.13
+"967","base load generation","solar","PV_base_storage",2095,"capital",541,0.13
+"968","base load generation","solar","PV_base_storage",2100,"capital",538,0.13
+"969","base load generation","solar","CSP_base_storage",1975,"capital",2270,0.13
+"970","base load generation","solar","CSP_base_storage",1990,"capital",2270,0.13
+"971","base load generation","solar","CSP_base_storage",2005,"capital",2270,0.13
+"972","base load generation","solar","CSP_base_storage",2010,"capital",2270,0.13
+"973","base load generation","solar","CSP_base_storage",2015,"capital",2270,0.13
+"974","base load generation","solar","CSP_base_storage",2020,"capital",1835,0.13
+"975","base load generation","solar","CSP_base_storage",2025,"capital",1532,0.13
+"976","base load generation","solar","CSP_base_storage",2030,"capital",1322,0.13
+"977","base load generation","solar","CSP_base_storage",2035,"capital",1175,0.13
+"978","base load generation","solar","CSP_base_storage",2040,"capital",1073,0.13
+"979","base load generation","solar","CSP_base_storage",2045,"capital",1002,0.13
+"980","base load generation","solar","CSP_base_storage",2050,"capital",953,0.13
+"981","base load generation","solar","CSP_base_storage",2055,"capital",918,0.13
+"982","base load generation","solar","CSP_base_storage",2060,"capital",895,0.13
+"983","base load generation","solar","CSP_base_storage",2065,"capital",878,0.13
+"984","base load generation","solar","CSP_base_storage",2070,"capital",866,0.13
+"985","base load generation","solar","CSP_base_storage",2075,"capital",858,0.13
+"986","base load generation","solar","CSP_base_storage",2080,"capital",853,0.13
+"987","base load generation","solar","CSP_base_storage",2085,"capital",849,0.13
+"988","base load generation","solar","CSP_base_storage",2090,"capital",846,0.13
+"989","base load generation","solar","CSP_base_storage",2095,"capital",844,0.13
+"990","base load generation","solar","CSP_base_storage",2100,"capital",843,0.13
+"991","base load generation","wind","wind_base_storage",1975,"capital",1681,0.13
+"992","base load generation","wind","wind_base_storage",1990,"capital",1681,0.13
+"993","base load generation","wind","wind_base_storage",2005,"capital",1681,0.13
+"994","base load generation","wind","wind_base_storage",2010,"capital",1681,0.13
+"995","base load generation","wind","wind_base_storage",2015,"capital",1681,0.13
+"996","base load generation","wind","wind_base_storage",2020,"capital",1426,0.13
+"997","base load generation","wind","wind_base_storage",2025,"capital",1229,0.13
+"998","base load generation","wind","wind_base_storage",2030,"capital",1076,0.13
+"999","base load generation","wind","wind_base_storage",2035,"capital",958,0.13
+"1000","base load generation","wind","wind_base_storage",2040,"capital",867,0.13
+"1001","base load generation","wind","wind_base_storage",2045,"capital",796,0.13
+"1002","base load generation","wind","wind_base_storage",2050,"capital",742,0.13
+"1003","base load generation","wind","wind_base_storage",2055,"capital",699,0.13
+"1004","base load generation","wind","wind_base_storage",2060,"capital",667,0.13
+"1005","base load generation","wind","wind_base_storage",2065,"capital",641,0.13
+"1006","base load generation","wind","wind_base_storage",2070,"capital",622,0.13
+"1007","base load generation","wind","wind_base_storage",2075,"capital",606,0.13
+"1008","base load generation","wind","wind_base_storage",2080,"capital",595,0.13
+"1009","base load generation","wind","wind_base_storage",2085,"capital",586,0.13
+"1010","base load generation","wind","wind_base_storage",2090,"capital",579,0.13
+"1011","base load generation","wind","wind_base_storage",2095,"capital",573,0.13
+"1012","base load generation","wind","wind_base_storage",2100,"capital",569,0.13
+"1013","peak generation","grid_storage","battery",1975,"capital",615,0.13
+"1014","peak generation","grid_storage","battery",1990,"capital",615,0.13
+"1015","peak generation","grid_storage","battery",2005,"capital",615,0.13
+"1016","peak generation","grid_storage","battery",2010,"capital",615,0.13
+"1017","peak generation","grid_storage","battery",2015,"capital",615,0.13
+"1018","peak generation","grid_storage","battery",2020,"capital",497,0.13
+"1019","peak generation","grid_storage","battery",2025,"capital",415,0.13
+"1020","peak generation","grid_storage","battery",2030,"capital",358,0.13
+"1021","peak generation","grid_storage","battery",2035,"capital",318,0.13
+"1022","peak generation","grid_storage","battery",2040,"capital",291,0.13
+"1023","peak generation","grid_storage","battery",2045,"capital",271,0.13
+"1024","peak generation","grid_storage","battery",2050,"capital",258,0.13
+"1025","peak generation","grid_storage","battery",2055,"capital",249,0.13
+"1026","peak generation","grid_storage","battery",2060,"capital",242,0.13
+"1027","peak generation","grid_storage","battery",2065,"capital",238,0.13
+"1028","peak generation","grid_storage","battery",2070,"capital",235,0.13
+"1029","peak generation","grid_storage","battery",2075,"capital",232,0.13
+"1030","peak generation","grid_storage","battery",2080,"capital",231,0.13
+"1031","peak generation","grid_storage","battery",2085,"capital",230,0.13
+"1032","peak generation","grid_storage","battery",2090,"capital",229,0.13
+"1033","peak generation","grid_storage","battery",2095,"capital",229,0.13
+"1034","peak generation","grid_storage","battery",2100,"capital",228,0.13

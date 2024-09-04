@@ -1,0 +1,243 @@
+"","supplysector","subsector","intermittent.technology","year","input.capital","capital.overnight","fixed.charge.rate"
+"1","elect_td_bld","rooftop_pv","rooftop_pv",1975,"capital",1083,0.1
+"2","elect_td_bld","rooftop_pv","rooftop_pv",1990,"capital",1083,0.1
+"3","elect_td_bld","rooftop_pv","rooftop_pv",2005,"capital",1083,0.1
+"4","elect_td_bld","rooftop_pv","rooftop_pv",2010,"capital",1083,0.1
+"5","elect_td_bld","rooftop_pv","rooftop_pv",2015,"capital",1083,0.1
+"6","elect_td_bld","rooftop_pv","rooftop_pv",2020,"capital",763,0.1
+"7","elect_td_bld","rooftop_pv","rooftop_pv",2025,"capital",575,0.1
+"8","elect_td_bld","rooftop_pv","rooftop_pv",2030,"capital",464,0.1
+"9","elect_td_bld","rooftop_pv","rooftop_pv",2035,"capital",398,0.1
+"10","elect_td_bld","rooftop_pv","rooftop_pv",2040,"capital",359,0.1
+"11","elect_td_bld","rooftop_pv","rooftop_pv",2045,"capital",336,0.1
+"12","elect_td_bld","rooftop_pv","rooftop_pv",2050,"capital",323,0.1
+"13","elect_td_bld","rooftop_pv","rooftop_pv",2055,"capital",315,0.1
+"14","elect_td_bld","rooftop_pv","rooftop_pv",2060,"capital",310,0.1
+"15","elect_td_bld","rooftop_pv","rooftop_pv",2065,"capital",307,0.1
+"16","elect_td_bld","rooftop_pv","rooftop_pv",2070,"capital",306,0.1
+"17","elect_td_bld","rooftop_pv","rooftop_pv",2075,"capital",305,0.1
+"18","elect_td_bld","rooftop_pv","rooftop_pv",2080,"capital",304,0.1
+"19","elect_td_bld","rooftop_pv","rooftop_pv",2085,"capital",304,0.1
+"20","elect_td_bld","rooftop_pv","rooftop_pv",2090,"capital",303,0.1
+"21","elect_td_bld","rooftop_pv","rooftop_pv",2095,"capital",303,0.1
+"22","elect_td_bld","rooftop_pv","rooftop_pv",2100,"capital",303,0.1
+"23","intermediate generation","solar","PV_int",1975,"capital",667,0.13
+"24","intermediate generation","solar","PV_int",1990,"capital",667,0.13
+"25","intermediate generation","solar","PV_int",2005,"capital",667,0.13
+"26","intermediate generation","solar","PV_int",2010,"capital",667,0.13
+"27","intermediate generation","solar","PV_int",2015,"capital",667,0.13
+"28","intermediate generation","solar","PV_int",2020,"capital",478,0.13
+"29","intermediate generation","solar","PV_int",2025,"capital",367,0.13
+"30","intermediate generation","solar","PV_int",2030,"capital",301,0.13
+"31","intermediate generation","solar","PV_int",2035,"capital",263,0.13
+"32","intermediate generation","solar","PV_int",2040,"capital",240,0.13
+"33","intermediate generation","solar","PV_int",2045,"capital",226,0.13
+"34","intermediate generation","solar","PV_int",2050,"capital",218,0.13
+"35","intermediate generation","solar","PV_int",2055,"capital",213,0.13
+"36","intermediate generation","solar","PV_int",2060,"capital",211,0.13
+"37","intermediate generation","solar","PV_int",2065,"capital",209,0.13
+"38","intermediate generation","solar","PV_int",2070,"capital",208,0.13
+"39","intermediate generation","solar","PV_int",2075,"capital",207,0.13
+"40","intermediate generation","solar","PV_int",2080,"capital",207,0.13
+"41","intermediate generation","solar","PV_int",2085,"capital",207,0.13
+"42","intermediate generation","solar","PV_int",2090,"capital",207,0.13
+"43","intermediate generation","solar","PV_int",2095,"capital",207,0.13
+"44","intermediate generation","solar","PV_int",2100,"capital",207,0.13
+"45","intermediate generation","solar","CSP_int",1975,"capital",1362,0.13
+"46","intermediate generation","solar","CSP_int",1990,"capital",1362,0.13
+"47","intermediate generation","solar","CSP_int",2005,"capital",1362,0.13
+"48","intermediate generation","solar","CSP_int",2010,"capital",1362,0.13
+"49","intermediate generation","solar","CSP_int",2015,"capital",1362,0.13
+"50","intermediate generation","solar","CSP_int",2020,"capital",1070,0.13
+"51","intermediate generation","solar","CSP_int",2025,"capital",877,0.13
+"52","intermediate generation","solar","CSP_int",2030,"capital",750,0.13
+"53","intermediate generation","solar","CSP_int",2035,"capital",666,0.13
+"54","intermediate generation","solar","CSP_int",2040,"capital",611,0.13
+"55","intermediate generation","solar","CSP_int",2045,"capital",574,0.13
+"56","intermediate generation","solar","CSP_int",2050,"capital",550,0.13
+"57","intermediate generation","solar","CSP_int",2055,"capital",535,0.13
+"58","intermediate generation","solar","CSP_int",2060,"capital",524,0.13
+"59","intermediate generation","solar","CSP_int",2065,"capital",517,0.13
+"60","intermediate generation","solar","CSP_int",2070,"capital",513,0.13
+"61","intermediate generation","solar","CSP_int",2075,"capital",510,0.13
+"62","intermediate generation","solar","CSP_int",2080,"capital",508,0.13
+"63","intermediate generation","solar","CSP_int",2085,"capital",507,0.13
+"64","intermediate generation","solar","CSP_int",2090,"capital",506,0.13
+"65","intermediate generation","solar","CSP_int",2095,"capital",505,0.13
+"66","intermediate generation","solar","CSP_int",2100,"capital",505,0.13
+"67","subpeak generation","solar","PV_subpeak",1975,"capital",667,0.13
+"68","subpeak generation","solar","PV_subpeak",1990,"capital",667,0.13
+"69","subpeak generation","solar","PV_subpeak",2005,"capital",667,0.13
+"70","subpeak generation","solar","PV_subpeak",2010,"capital",667,0.13
+"71","subpeak generation","solar","PV_subpeak",2015,"capital",667,0.13
+"72","subpeak generation","solar","PV_subpeak",2020,"capital",478,0.13
+"73","subpeak generation","solar","PV_subpeak",2025,"capital",367,0.13
+"74","subpeak generation","solar","PV_subpeak",2030,"capital",301,0.13
+"75","subpeak generation","solar","PV_subpeak",2035,"capital",263,0.13
+"76","subpeak generation","solar","PV_subpeak",2040,"capital",240,0.13
+"77","subpeak generation","solar","PV_subpeak",2045,"capital",226,0.13
+"78","subpeak generation","solar","PV_subpeak",2050,"capital",218,0.13
+"79","subpeak generation","solar","PV_subpeak",2055,"capital",213,0.13
+"80","subpeak generation","solar","PV_subpeak",2060,"capital",211,0.13
+"81","subpeak generation","solar","PV_subpeak",2065,"capital",209,0.13
+"82","subpeak generation","solar","PV_subpeak",2070,"capital",208,0.13
+"83","subpeak generation","solar","PV_subpeak",2075,"capital",207,0.13
+"84","subpeak generation","solar","PV_subpeak",2080,"capital",207,0.13
+"85","subpeak generation","solar","PV_subpeak",2085,"capital",207,0.13
+"86","subpeak generation","solar","PV_subpeak",2090,"capital",207,0.13
+"87","subpeak generation","solar","PV_subpeak",2095,"capital",207,0.13
+"88","subpeak generation","solar","PV_subpeak",2100,"capital",207,0.13
+"89","subpeak generation","solar","CSP_subpeak",1975,"capital",1362,0.13
+"90","subpeak generation","solar","CSP_subpeak",1990,"capital",1362,0.13
+"91","subpeak generation","solar","CSP_subpeak",2005,"capital",1362,0.13
+"92","subpeak generation","solar","CSP_subpeak",2010,"capital",1362,0.13
+"93","subpeak generation","solar","CSP_subpeak",2015,"capital",1362,0.13
+"94","subpeak generation","solar","CSP_subpeak",2020,"capital",1070,0.13
+"95","subpeak generation","solar","CSP_subpeak",2025,"capital",877,0.13
+"96","subpeak generation","solar","CSP_subpeak",2030,"capital",750,0.13
+"97","subpeak generation","solar","CSP_subpeak",2035,"capital",666,0.13
+"98","subpeak generation","solar","CSP_subpeak",2040,"capital",611,0.13
+"99","subpeak generation","solar","CSP_subpeak",2045,"capital",574,0.13
+"100","subpeak generation","solar","CSP_subpeak",2050,"capital",550,0.13
+"101","subpeak generation","solar","CSP_subpeak",2055,"capital",535,0.13
+"102","subpeak generation","solar","CSP_subpeak",2060,"capital",524,0.13
+"103","subpeak generation","solar","CSP_subpeak",2065,"capital",517,0.13
+"104","subpeak generation","solar","CSP_subpeak",2070,"capital",513,0.13
+"105","subpeak generation","solar","CSP_subpeak",2075,"capital",510,0.13
+"106","subpeak generation","solar","CSP_subpeak",2080,"capital",508,0.13
+"107","subpeak generation","solar","CSP_subpeak",2085,"capital",507,0.13
+"108","subpeak generation","solar","CSP_subpeak",2090,"capital",506,0.13
+"109","subpeak generation","solar","CSP_subpeak",2095,"capital",505,0.13
+"110","subpeak generation","solar","CSP_subpeak",2100,"capital",505,0.13
+"111","peak generation","solar","PV_peak",1975,"capital",667,0.13
+"112","peak generation","solar","PV_peak",1990,"capital",667,0.13
+"113","peak generation","solar","PV_peak",2005,"capital",667,0.13
+"114","peak generation","solar","PV_peak",2010,"capital",667,0.13
+"115","peak generation","solar","PV_peak",2015,"capital",667,0.13
+"116","peak generation","solar","PV_peak",2020,"capital",478,0.13
+"117","peak generation","solar","PV_peak",2025,"capital",367,0.13
+"118","peak generation","solar","PV_peak",2030,"capital",301,0.13
+"119","peak generation","solar","PV_peak",2035,"capital",263,0.13
+"120","peak generation","solar","PV_peak",2040,"capital",240,0.13
+"121","peak generation","solar","PV_peak",2045,"capital",226,0.13
+"122","peak generation","solar","PV_peak",2050,"capital",218,0.13
+"123","peak generation","solar","PV_peak",2055,"capital",213,0.13
+"124","peak generation","solar","PV_peak",2060,"capital",211,0.13
+"125","peak generation","solar","PV_peak",2065,"capital",209,0.13
+"126","peak generation","solar","PV_peak",2070,"capital",208,0.13
+"127","peak generation","solar","PV_peak",2075,"capital",207,0.13
+"128","peak generation","solar","PV_peak",2080,"capital",207,0.13
+"129","peak generation","solar","PV_peak",2085,"capital",207,0.13
+"130","peak generation","solar","PV_peak",2090,"capital",207,0.13
+"131","peak generation","solar","PV_peak",2095,"capital",207,0.13
+"132","peak generation","solar","PV_peak",2100,"capital",207,0.13
+"133","peak generation","solar","CSP_peak",1975,"capital",1362,0.13
+"134","peak generation","solar","CSP_peak",1990,"capital",1362,0.13
+"135","peak generation","solar","CSP_peak",2005,"capital",1362,0.13
+"136","peak generation","solar","CSP_peak",2010,"capital",1362,0.13
+"137","peak generation","solar","CSP_peak",2015,"capital",1362,0.13
+"138","peak generation","solar","CSP_peak",2020,"capital",1070,0.13
+"139","peak generation","solar","CSP_peak",2025,"capital",877,0.13
+"140","peak generation","solar","CSP_peak",2030,"capital",750,0.13
+"141","peak generation","solar","CSP_peak",2035,"capital",666,0.13
+"142","peak generation","solar","CSP_peak",2040,"capital",611,0.13
+"143","peak generation","solar","CSP_peak",2045,"capital",574,0.13
+"144","peak generation","solar","CSP_peak",2050,"capital",550,0.13
+"145","peak generation","solar","CSP_peak",2055,"capital",535,0.13
+"146","peak generation","solar","CSP_peak",2060,"capital",524,0.13
+"147","peak generation","solar","CSP_peak",2065,"capital",517,0.13
+"148","peak generation","solar","CSP_peak",2070,"capital",513,0.13
+"149","peak generation","solar","CSP_peak",2075,"capital",510,0.13
+"150","peak generation","solar","CSP_peak",2080,"capital",508,0.13
+"151","peak generation","solar","CSP_peak",2085,"capital",507,0.13
+"152","peak generation","solar","CSP_peak",2090,"capital",506,0.13
+"153","peak generation","solar","CSP_peak",2095,"capital",505,0.13
+"154","peak generation","solar","CSP_peak",2100,"capital",505,0.13
+"155","base load generation","wind","wind_base",1975,"capital",451,0.13
+"156","base load generation","wind","wind_base",1990,"capital",451,0.13
+"157","base load generation","wind","wind_base",2005,"capital",451,0.13
+"158","base load generation","wind","wind_base",2010,"capital",451,0.13
+"159","base load generation","wind","wind_base",2015,"capital",451,0.13
+"160","base load generation","wind","wind_base",2020,"capital",406,0.13
+"161","base load generation","wind","wind_base",2025,"capital",371,0.13
+"162","base load generation","wind","wind_base",2030,"capital",345,0.13
+"163","base load generation","wind","wind_base",2035,"capital",324,0.13
+"164","base load generation","wind","wind_base",2040,"capital",308,0.13
+"165","base load generation","wind","wind_base",2045,"capital",295,0.13
+"166","base load generation","wind","wind_base",2050,"capital",286,0.13
+"167","base load generation","wind","wind_base",2055,"capital",278,0.13
+"168","base load generation","wind","wind_base",2060,"capital",272,0.13
+"169","base load generation","wind","wind_base",2065,"capital",268,0.13
+"170","base load generation","wind","wind_base",2070,"capital",264,0.13
+"171","base load generation","wind","wind_base",2075,"capital",262,0.13
+"172","base load generation","wind","wind_base",2080,"capital",260,0.13
+"173","base load generation","wind","wind_base",2085,"capital",258,0.13
+"174","base load generation","wind","wind_base",2090,"capital",257,0.13
+"175","base load generation","wind","wind_base",2095,"capital",256,0.13
+"176","base load generation","wind","wind_base",2100,"capital",255,0.13
+"177","base load generation","wind","wind_base_offshore",1975,"capital",1118,0.13
+"178","base load generation","wind","wind_base_offshore",1990,"capital",1118,0.13
+"179","base load generation","wind","wind_base_offshore",2005,"capital",1118,0.13
+"180","base load generation","wind","wind_base_offshore",2010,"capital",1118,0.13
+"181","base load generation","wind","wind_base_offshore",2015,"capital",1118,0.13
+"182","base load generation","wind","wind_base_offshore",2020,"capital",951,0.13
+"183","base load generation","wind","wind_base_offshore",2025,"capital",821,0.13
+"184","base load generation","wind","wind_base_offshore",2030,"capital",721,0.13
+"185","base load generation","wind","wind_base_offshore",2035,"capital",644,0.13
+"186","base load generation","wind","wind_base_offshore",2040,"capital",584,0.13
+"187","base load generation","wind","wind_base_offshore",2045,"capital",538,0.13
+"188","base load generation","wind","wind_base_offshore",2050,"capital",502,0.13
+"189","base load generation","wind","wind_base_offshore",2055,"capital",474,0.13
+"190","base load generation","wind","wind_base_offshore",2060,"capital",453,0.13
+"191","base load generation","wind","wind_base_offshore",2065,"capital",436,0.13
+"192","base load generation","wind","wind_base_offshore",2070,"capital",423,0.13
+"193","base load generation","wind","wind_base_offshore",2075,"capital",413,0.13
+"194","base load generation","wind","wind_base_offshore",2080,"capital",406,0.13
+"195","base load generation","wind","wind_base_offshore",2085,"capital",400,0.13
+"196","base load generation","wind","wind_base_offshore",2090,"capital",395,0.13
+"197","base load generation","wind","wind_base_offshore",2095,"capital",391,0.13
+"198","base load generation","wind","wind_base_offshore",2100,"capital",389,0.13
+"199","intermediate generation","wind","wind_int",1975,"capital",451,0.13
+"200","intermediate generation","wind","wind_int",1990,"capital",451,0.13
+"201","intermediate generation","wind","wind_int",2005,"capital",451,0.13
+"202","intermediate generation","wind","wind_int",2010,"capital",451,0.13
+"203","intermediate generation","wind","wind_int",2015,"capital",451,0.13
+"204","intermediate generation","wind","wind_int",2020,"capital",406,0.13
+"205","intermediate generation","wind","wind_int",2025,"capital",371,0.13
+"206","intermediate generation","wind","wind_int",2030,"capital",345,0.13
+"207","intermediate generation","wind","wind_int",2035,"capital",324,0.13
+"208","intermediate generation","wind","wind_int",2040,"capital",308,0.13
+"209","intermediate generation","wind","wind_int",2045,"capital",295,0.13
+"210","intermediate generation","wind","wind_int",2050,"capital",286,0.13
+"211","intermediate generation","wind","wind_int",2055,"capital",278,0.13
+"212","intermediate generation","wind","wind_int",2060,"capital",272,0.13
+"213","intermediate generation","wind","wind_int",2065,"capital",268,0.13
+"214","intermediate generation","wind","wind_int",2070,"capital",264,0.13
+"215","intermediate generation","wind","wind_int",2075,"capital",262,0.13
+"216","intermediate generation","wind","wind_int",2080,"capital",260,0.13
+"217","intermediate generation","wind","wind_int",2085,"capital",258,0.13
+"218","intermediate generation","wind","wind_int",2090,"capital",257,0.13
+"219","intermediate generation","wind","wind_int",2095,"capital",256,0.13
+"220","intermediate generation","wind","wind_int",2100,"capital",255,0.13
+"221","subpeak generation","wind","wind_subpeak",1975,"capital",451,0.13
+"222","subpeak generation","wind","wind_subpeak",1990,"capital",451,0.13
+"223","subpeak generation","wind","wind_subpeak",2005,"capital",451,0.13
+"224","subpeak generation","wind","wind_subpeak",2010,"capital",451,0.13
+"225","subpeak generation","wind","wind_subpeak",2015,"capital",451,0.13
+"226","subpeak generation","wind","wind_subpeak",2020,"capital",406,0.13
+"227","subpeak generation","wind","wind_subpeak",2025,"capital",371,0.13
+"228","subpeak generation","wind","wind_subpeak",2030,"capital",345,0.13
+"229","subpeak generation","wind","wind_subpeak",2035,"capital",324,0.13
+"230","subpeak generation","wind","wind_subpeak",2040,"capital",308,0.13
+"231","subpeak generation","wind","wind_subpeak",2045,"capital",295,0.13
+"232","subpeak generation","wind","wind_subpeak",2050,"capital",286,0.13
+"233","subpeak generation","wind","wind_subpeak",2055,"capital",278,0.13
+"234","subpeak generation","wind","wind_subpeak",2060,"capital",272,0.13
+"235","subpeak generation","wind","wind_subpeak",2065,"capital",268,0.13
+"236","subpeak generation","wind","wind_subpeak",2070,"capital",264,0.13
+"237","subpeak generation","wind","wind_subpeak",2075,"capital",262,0.13
+"238","subpeak generation","wind","wind_subpeak",2080,"capital",260,0.13
+"239","subpeak generation","wind","wind_subpeak",2085,"capital",258,0.13
+"240","subpeak generation","wind","wind_subpeak",2090,"capital",257,0.13
+"241","subpeak generation","wind","wind_subpeak",2095,"capital",256,0.13
+"242","subpeak generation","wind","wind_subpeak",2100,"capital",255,0.13

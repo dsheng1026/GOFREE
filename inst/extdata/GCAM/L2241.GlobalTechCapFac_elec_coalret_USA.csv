@@ -1,0 +1,89 @@
+"","supplysector","subsector","technology","year","capacity.factor"
+"1","base load generation","coal","coal_base_conv pul_retire_2020",1975,0.85
+"2","base load generation","coal","coal_base_conv pul_retire_2020",1990,0.85
+"3","base load generation","coal","coal_base_conv pul_retire_2020",2005,0.85
+"4","base load generation","coal","coal_base_conv pul_retire_2020",2010,0.85
+"5","base load generation","coal","coal_base_conv pul_retire_2020",2015,0.85
+"6","base load generation","coal","coal_base_conv pul_retire_2020",2020,0.85
+"7","base load generation","coal","coal_base_conv pul_retire_2020",2025,0.85
+"8","base load generation","coal","coal_base_conv pul_retire_2020",2030,0.85
+"9","base load generation","coal","coal_base_conv pul_retire_2020",2035,0.85
+"10","base load generation","coal","coal_base_conv pul_retire_2020",2040,0.85
+"11","base load generation","coal","coal_base_conv pul_retire_2020",2045,0.85
+"12","base load generation","coal","coal_base_conv pul_retire_2020",2050,0.85
+"13","base load generation","coal","coal_base_conv pul_retire_2020",2055,0.85
+"14","base load generation","coal","coal_base_conv pul_retire_2020",2060,0.85
+"15","base load generation","coal","coal_base_conv pul_retire_2020",2065,0.85
+"16","base load generation","coal","coal_base_conv pul_retire_2020",2070,0.85
+"17","base load generation","coal","coal_base_conv pul_retire_2020",2075,0.85
+"18","base load generation","coal","coal_base_conv pul_retire_2020",2080,0.85
+"19","base load generation","coal","coal_base_conv pul_retire_2020",2085,0.85
+"20","base load generation","coal","coal_base_conv pul_retire_2020",2090,0.85
+"21","base load generation","coal","coal_base_conv pul_retire_2020",2095,0.85
+"22","base load generation","coal","coal_base_conv pul_retire_2020",2100,0.85
+"23","intermediate generation","coal","coal_int_conv pul_retire_2020",1975,0.289
+"24","intermediate generation","coal","coal_int_conv pul_retire_2020",1990,0.289
+"25","intermediate generation","coal","coal_int_conv pul_retire_2020",2005,0.289
+"26","intermediate generation","coal","coal_int_conv pul_retire_2020",2010,0.289
+"27","intermediate generation","coal","coal_int_conv pul_retire_2020",2015,0.289
+"28","intermediate generation","coal","coal_int_conv pul_retire_2020",2020,0.289
+"29","intermediate generation","coal","coal_int_conv pul_retire_2020",2025,0.289
+"30","intermediate generation","coal","coal_int_conv pul_retire_2020",2030,0.289
+"31","intermediate generation","coal","coal_int_conv pul_retire_2020",2035,0.289
+"32","intermediate generation","coal","coal_int_conv pul_retire_2020",2040,0.289
+"33","intermediate generation","coal","coal_int_conv pul_retire_2020",2045,0.289
+"34","intermediate generation","coal","coal_int_conv pul_retire_2020",2050,0.289
+"35","intermediate generation","coal","coal_int_conv pul_retire_2020",2055,0.289
+"36","intermediate generation","coal","coal_int_conv pul_retire_2020",2060,0.289
+"37","intermediate generation","coal","coal_int_conv pul_retire_2020",2065,0.289
+"38","intermediate generation","coal","coal_int_conv pul_retire_2020",2070,0.289
+"39","intermediate generation","coal","coal_int_conv pul_retire_2020",2075,0.289
+"40","intermediate generation","coal","coal_int_conv pul_retire_2020",2080,0.289
+"41","intermediate generation","coal","coal_int_conv pul_retire_2020",2085,0.289
+"42","intermediate generation","coal","coal_int_conv pul_retire_2020",2090,0.289
+"43","intermediate generation","coal","coal_int_conv pul_retire_2020",2095,0.289
+"44","intermediate generation","coal","coal_int_conv pul_retire_2020",2100,0.289
+"45","peak generation","coal","coal_peak_conv pul_retire_2020",1975,0.034
+"46","peak generation","coal","coal_peak_conv pul_retire_2020",1990,0.034
+"47","peak generation","coal","coal_peak_conv pul_retire_2020",2005,0.034
+"48","peak generation","coal","coal_peak_conv pul_retire_2020",2010,0.034
+"49","peak generation","coal","coal_peak_conv pul_retire_2020",2015,0.034
+"50","peak generation","coal","coal_peak_conv pul_retire_2020",2020,0.034
+"51","peak generation","coal","coal_peak_conv pul_retire_2020",2025,0.034
+"52","peak generation","coal","coal_peak_conv pul_retire_2020",2030,0.034
+"53","peak generation","coal","coal_peak_conv pul_retire_2020",2035,0.034
+"54","peak generation","coal","coal_peak_conv pul_retire_2020",2040,0.034
+"55","peak generation","coal","coal_peak_conv pul_retire_2020",2045,0.034
+"56","peak generation","coal","coal_peak_conv pul_retire_2020",2050,0.034
+"57","peak generation","coal","coal_peak_conv pul_retire_2020",2055,0.034
+"58","peak generation","coal","coal_peak_conv pul_retire_2020",2060,0.034
+"59","peak generation","coal","coal_peak_conv pul_retire_2020",2065,0.034
+"60","peak generation","coal","coal_peak_conv pul_retire_2020",2070,0.034
+"61","peak generation","coal","coal_peak_conv pul_retire_2020",2075,0.034
+"62","peak generation","coal","coal_peak_conv pul_retire_2020",2080,0.034
+"63","peak generation","coal","coal_peak_conv pul_retire_2020",2085,0.034
+"64","peak generation","coal","coal_peak_conv pul_retire_2020",2090,0.034
+"65","peak generation","coal","coal_peak_conv pul_retire_2020",2095,0.034
+"66","peak generation","coal","coal_peak_conv pul_retire_2020",2100,0.034
+"67","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",1975,0.0765
+"68","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",1990,0.0765
+"69","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2005,0.0765
+"70","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2010,0.0765
+"71","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2015,0.0765
+"72","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2020,0.0765
+"73","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2025,0.0765
+"74","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2030,0.0765
+"75","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2035,0.0765
+"76","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2040,0.0765
+"77","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2045,0.0765
+"78","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2050,0.0765
+"79","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2055,0.0765
+"80","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2060,0.0765
+"81","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2065,0.0765
+"82","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2070,0.0765
+"83","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2075,0.0765
+"84","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2080,0.0765
+"85","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2085,0.0765
+"86","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2090,0.0765
+"87","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2095,0.0765
+"88","subpeak generation","coal","coal_subpeak_conv pul_retire_2020",2100,0.0765
