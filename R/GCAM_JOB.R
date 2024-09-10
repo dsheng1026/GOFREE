@@ -106,17 +106,15 @@ OM_JOB <- function(GW_activity){
 #'
 #' @examples
 #' job.CON <- CON_JOB(GW_activity, "Net")
-#' job.CON <- CON_JOB(GW_activity, "Total")
+#' job.CON <- CON_JOB(GW_activity)
 
-CON_JOB <- function(GW_activity, method){
-  if (!method %in% c("Net", "Total")) {
-    print("Not a valid input, use either 'Net' or 'Total'")} else{
-      if (method == "Net") {
-        ACTIVITY <-  "add_adj"
-      } else {
-        ACTIVITY <-  "additions"
-      }
-    }
+CON_JOB <- function(GW_activity, method = NULL){
+  if (is.null(method)||method %in% c("Total", "total")){
+    ACTIVITY <-  "additions"
+  } else if (method %in% c("Net", "net")){
+    ACTIVITY <-  "add_adj"
+  } else {stop("Not a valid input, use either 'Net' or 'Total'")
+  }
 
   GW_activity %>%
     dplyr::filter(Year >= 2020) %>%
@@ -157,18 +155,18 @@ CON_JOB <- function(GW_activity, method){
 #'
 #' @examples
 #' job.DECOM <- DECOM_JOB(GW_activity, "Net")
-#' job.DECOM <- DECOM_JOB(GW_activity, "Total")
+#' job.DECOM <- DECOM_JOB(GW_activity)
 
-DECOM_JOB <- function(GW_activity, method){
+DECOM_JOB <- function(GW_activity, method = NULL){
 
-  if (!method %in% c("Net", "Total")) {
-    print("Not a valid input, use either 'Net' or 'Total'")} else{
-      if (method == "Net") {
-        ACTIVITY <-  "ret_adj"
-      } else {
-        ACTIVITY <-  "retirements"
-      }
-    }
+  if (is.null(method)||method %in% c("Total", "total")){
+    ACTIVITY <-  "retirements"
+  } else if (method %in% c("Net", "net")){
+    ACTIVITY <-  "ret_adj"
+  } else {stop("Not a valid input, use either 'Net' or 'Total'")
+  }
+
+
   GW_activity %>%
     dplyr::filter(Year >= 2020) %>%
     dplyr::filter(activity == ACTIVITY) %>%
@@ -199,9 +197,10 @@ DECOM_JOB <- function(GW_activity, method){
 #'
 #' @examples
 #' JOB_activity <- GCAM_JOB(GW_activity, "Net")
-#' JOB_activity <- GCAM_JOB(GW_activity, "Total")
+#' JOB_activity <- GCAM_JOB(GW_activity)
 
-GCAM_JOB <- function(GW_activity, method){
+GCAM_JOB <- function(GW_activity, method = NULL){
+
   job.OM <- GOFREE::OM_JOB(GW_activity)
   job.CON <- GOFREE::CON_JOB(GW_activity, method)
   job.DECOM <- GOFREE::DECOM_JOB(GW_activity, method)
