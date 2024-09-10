@@ -48,7 +48,7 @@ ReadGCAM <- function(filetype,
       if(is.null(prj_name)){
         print("missing a prj name")
       } else{
-        prj <- rgcam::loadProject(prj_name)}
+        prj <- rgcam::loadProject(paste0(input_path,'/',prj_name))}
     }
   }
   return(prj)

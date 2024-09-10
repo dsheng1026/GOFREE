@@ -41,11 +41,13 @@ PLOT_EF <- function(){
 #' @examples
 #' PLOT_GW(GW_activity, "Net")
 #' PLOT_GW(GW_activity, "Total")
-PLOT_GW <- function(GW_activity, method){
-  if (method == "Net") {
-    ACTIVITY <- c("installed", "add_adj", "ret_adj")
-  } else {
+PLOT_GW <- function(GW_activity, method = NULL){
+
+  if (is.null(method)||method %in% c("Total", "total")){
     ACTIVITY <-  c("installed", "additions", "retirements")
+  } else if (method %in% c("Net", "net")){
+    ACTIVITY <- c("installed", "add_adj", "ret_adj")
+  } else {stop("Not a valid input, use either 'Net' or 'Total'")
   }
   GW_activity %>%
     dplyr::filter(Year >= 2020) %>%
