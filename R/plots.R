@@ -144,6 +144,17 @@ MAP_JOB <- function(JOB_activity, year){
     dplyr::summarise(value = sum(value, na.rm = T), .groups = "drop") ->
     job.state
 
+
+  # job.state %>%
+  #   ggplot2::ggplot() +
+  #   ggplot2::geom_bar(ggplot2::aes(x = reorder(region, -value), y = value/1000),
+  #                     stat = "identity") +
+  #   ggplot2::labs(x = "", y = "Thousand people",
+  #                 title = paste0("state-level power sector employment: ", year)) +
+  #   ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1 +
+  #   return()
+
+
   GOFREE::mapUS52Compact %>%
     dplyr::select(region = subRegion) %>%
     dplyr::left_join(job.state, by = "region") %>%
@@ -167,14 +178,16 @@ MAP_JOB <- function(JOB_activity, year){
                                    "(100k, 200k]", "(200k, 300k]", "> 300k"))) %>%
     stats::na.omit() ->
     df.map
+
   # top and tail 5 states
+
   df.map %>%
     dplyr::arrange(desc(value)) %>%
-    dplyr::mutate(value = round(value,0)) %>%
+    dplyr::mutate(value = round(value,1)) %>%
     utils::head(5) -> df.text.head
   df.map %>%
     dplyr::arrange(desc(value)) %>%
-    dplyr::mutate(value = round(value,0)) %>%
+    dplyr::mutate(value = round(value,1)) %>%
     utils::tail(5) -> df.text.tail
 
   df.map %>%
