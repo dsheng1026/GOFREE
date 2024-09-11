@@ -8,7 +8,6 @@
 #'
 #' @examples
 #' job.OM <- OM_JOB(GW_activity)
-
 OM_JOB <- function(GW_activity){
 
   ## adjustment for OM EF ----
@@ -93,7 +92,6 @@ OM_JOB <- function(GW_activity){
 
 
 
-
 #' CON_JOB
 #'
 #' @param GW_activity Output from GCAM_GW()
@@ -107,7 +105,6 @@ OM_JOB <- function(GW_activity){
 #' @examples
 #' job.CON <- CON_JOB(GW_activity, "Net")
 #' job.CON <- CON_JOB(GW_activity)
-
 CON_JOB <- function(GW_activity, method = NULL){
   if (is.null(method)||method %in% c("Total", "total")){
     ACTIVITY <-  "additions"
@@ -119,8 +116,10 @@ CON_JOB <- function(GW_activity, method = NULL){
   GW_activity %>%
     dplyr::filter(Year >= 2020) %>%
     dplyr::filter(activity == ACTIVITY) %>%
-    dplyr::left_join(EF.JEDI %>% dplyr::select(region, unit, CON.L, fuel),
+    dplyr::left_join(EF.JEDI %>% dplyr::select(region, unit, CON.L, fuel, Construction.Period.Y),
               by = c("region", "fuel")) %>%
+    # filter the plant with construction period no longer than GCAM model step year (5 years)
+    dplyr::filter(Construction.Period.Y <= GCAM_model_step) %>%
     dplyr::mutate(value = CON.L * value * convGW_MW,
            job = "Construction-onsite",
            Units = "ppl") %>%
@@ -129,18 +128,62 @@ CON_JOB <- function(GW_activity, method = NULL){
     dplyr::bind_rows(GW_activity %>%
                        dplyr::filter(Year >= 2020) %>%
                        dplyr::filter(activity == ACTIVITY) %>%
-                       dplyr::left_join(EF.JEDI %>% dplyr::select(region, unit, CON.RL, fuel),
+                       dplyr::left_join(EF.JEDI %>% dplyr::select(region, unit, CON.RL, fuel, Construction.Period.Y),
                           by = c("region", "fuel")) %>%
+                       dplyr::filter(Construction.Period.Y <= GCAM_model_step) %>%
                        dplyr::mutate(value = CON.RL * value * convGW_MW,
                                      job = "Construction-related",
                                      Units = "ppl") %>%
                        dplyr::group_by(scenario, region, Year, fuel, subsector, job, Units) %>%
                        dplyr::summarise(value = sum(value, na.rm = T), .groups = "drop")) %>%
     dplyr::mutate(value = ceiling(value)) -> # round to next integer
+    fuel_CON_ppl_short
+
+  GW_activity %>%
+    dplyr::filter(Year >= 2020) %>%
+    dplyr::filter(activity == ACTIVITY) %>%
+    dplyr::left_join(EF.JEDI %>% dplyr::select(region, unit, CON.L, CON.RL, fuel, Construction.Period.Y),
+                     by = c("region", "fuel")) %>%
+    # filter the plant with construction period no longer than GCAM model step year (5 years)
+    dplyr::filter(Construction.Period.Y > GCAM_model_step) ->
+    GW_long
+
+  GW_long %>% dplyr::select(-Year, -value) %>%
+    dplyr::distinct() %>%
+    repeat_add_columns(tibble::tibble(Year = c(seq(GCAM_futr_start, GCAM_futr_end, by = GCAM_model_step)))) %>%
+    dplyr::left_join(GW_long %>% dplyr::select(scenario, region, subsector, technology, Year, value),
+                     by = c("scenario", "region", "subsector", "technology", "Year")) %>%
+    dplyr::arrange(dplyr::across(-c(Year, value, CON.L, CON.RL))) %>%
+    dplyr::group_by(dplyr::across(-c(Year, value, CON.L, CON.RL))) %>%
+    dplyr::mutate(# construction for the capacity addition in t
+                  value_con = CON.L * value * convGW_MW,
+                  # construction for the capacity addition in t + 1
+                  value_lead_con = CON.L * dplyr::lead(value) * convGW_MW * (Construction.Period.Y - GCAM_model_step)/GCAM_model_step,
+                  value = tidyr::replace_na(value_con,0) + tidyr::replace_na(value_lead_con, 0),
+                  job = "Construction-onsite",
+                  Units = "ppl") %>%
+    dplyr::group_by(scenario, region, Year, fuel, subsector, job, Units) %>%
+    dplyr::summarise(value = sum(value, na.rm = T), .groups = "drop") %>%
+    dplyr::bind_rows(GW_long %>% dplyr::select(-Year, -value) %>% dplyr::distinct() %>%
+                       repeat_add_columns(tibble::tibble(Year = c(seq(GCAM_futr_start, GCAM_futr_end, by = GCAM_model_step)))) %>%
+                       dplyr::left_join(GW_long %>% dplyr::select(scenario, region, subsector, technology, Year, value),
+                                        by = c("scenario", "region", "subsector", "technology", "Year")) %>%
+                       dplyr::arrange(dplyr::across(-c(Year, value, CON.L, CON.RL))) %>%
+                       dplyr::group_by(dplyr::across(-c(Year, value, CON.L, CON.RL))) %>%
+                       dplyr::mutate(# construction for the capacity addition in t
+                                     value_con = CON.RL * value * convGW_MW,
+                                     # construction for the capacity addition in t + 1
+                                     value_lead_con = CON.RL * dplyr::lead(value) * convGW_MW * (Construction.Period.Y - GCAM_model_step)/GCAM_model_step,
+                                     value = tidyr::replace_na(value_con,0) + tidyr::replace_na(value_lead_con, 0),
+                         job = "Construction-related",
+                         Units = "ppl") %>%
+                       dplyr::group_by(scenario, region, Year, fuel, subsector, job, Units) %>%
+                       dplyr::summarise(value = sum(value, na.rm = T), .groups = "drop")) %>%
+    dplyr::mutate(value = ceiling(value)) %>%  # round to next integer
+    dplyr::bind_rows(fuel_CON_ppl_short) ->
     fuel_CON_ppl
   return(fuel_CON_ppl)
 }
-
 
 
 #' DECOM_JOB
@@ -156,7 +199,6 @@ CON_JOB <- function(GW_activity, method = NULL){
 #' @examples
 #' job.DECOM <- DECOM_JOB(GW_activity, "Net")
 #' job.DECOM <- DECOM_JOB(GW_activity)
-
 DECOM_JOB <- function(GW_activity, method = NULL){
 
   if (is.null(method)||method %in% c("Total", "total")){
@@ -170,18 +212,41 @@ DECOM_JOB <- function(GW_activity, method = NULL){
   GW_activity %>%
     dplyr::filter(Year >= 2020) %>%
     dplyr::filter(activity == ACTIVITY) %>%
-    dplyr::left_join(EF.JEDI %>% dplyr::select(region, unit, DECON, fuel),
+    dplyr::left_join(EF.JEDI %>% dplyr::select(region, unit, DECON, fuel, Construction.Period.Y),
               by = c("region", "fuel")) %>%
+    dplyr::filter(Construction.Period.Y <= GCAM_model_step) %>%
     dplyr::mutate(value = DECON * value * convGW_MW,
            job = "Decommission",
            Units = "ppl") %>%
     dplyr::group_by(scenario, region, Year, fuel, subsector, job, Units) %>%
     dplyr::summarise(value = sum(value, na.rm = T), .groups = "drop") %>%
     dplyr::mutate(value = ceiling(value))-> # round to next integer
+    fuel_DECOM_ppl_short
+
+
+  GW_activity %>%
+    dplyr::filter(Year >= 2020) %>%
+    dplyr::filter(activity == ACTIVITY) %>%
+    dplyr::left_join(EF.JEDI %>% dplyr::select(region, unit, DECON, fuel, Construction.Period.Y),
+                     by = c("region", "fuel")) %>%
+    dplyr::filter(Construction.Period.Y > GCAM_model_step) %>%
+    dplyr::arrange(dplyr::across(-c(Year, value, DECON ))) %>%
+    dplyr::group_by(dplyr::across(-c(Year, value, DECON ))) %>%
+    dplyr::mutate(# construction for the capacity addition in t
+                  value_decon = DECON * value * convGW_MW,
+                  # construction for the capacity addition in t + 1
+                  value_lead_decon = DECON * dplyr::lead(value) * convGW_MW * (Construction.Period.Y - GCAM_model_step) / GCAM_model_step,
+                  value = value_decon + value_lead_decon,
+                  job = "Decommission",
+                  Units = "ppl") %>%
+    dplyr::group_by(scenario, region, Year, fuel, subsector, job, Units) %>%
+    dplyr::summarise(value = sum(value, na.rm = T), .groups = "drop") %>%
+    dplyr::mutate(value = ceiling(value)) %>%
+    dplyr::bind_rows(fuel_DECOM_ppl_short) -> # round to next integer
     fuel_DECOM_ppl
+
   return(fuel_DECOM_ppl)
 }
-
 
 
 
@@ -198,7 +263,6 @@ DECOM_JOB <- function(GW_activity, method = NULL){
 #' @examples
 #' JOB_activity <- GCAM_JOB(GW_activity, "Net")
 #' JOB_activity <- GCAM_JOB(GW_activity)
-
 GCAM_JOB <- function(GW_activity, method = NULL){
 
   job.OM <- GOFREE::OM_JOB(GW_activity)
