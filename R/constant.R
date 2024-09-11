@@ -11,6 +11,11 @@ convGW_MW <- 1e3
 convMW_kW <- 1e3
 GCAM_model_step <- 5
 
+
+GCAM_futr_start <- 2020
+
+GCAM_futr_end <- 2100
+
 # capacity factor ----
 geo_cf <- 0.76
 
