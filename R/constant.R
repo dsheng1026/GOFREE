@@ -39,7 +39,7 @@ gcamusa.STATES <- c("AK", "AL", "AR", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", 
 
 theme0 <- ggplot2::theme(
   panel.border = ggplot2::element_rect(colour = "black", linewidth =1),
-  text = ggplot2::element_text(family= "Arial", size = 15),
+  text = ggplot2::element_text(size = 15),
   axis.text.y = ggplot2::element_text(angle = 0, color = "black", size = 15, margin = ggplot2::margin(r = 10)),
   axis.text.x = ggplot2::element_text(angle = 0, color = "black", size = 15, margin = ggplot2::margin(t = 10), vjust= 0.5),
   axis.title.y = ggplot2::element_text(size = 15, margin = ggplot2::margin(t = 0, r = 10, b = 0, l = 0)),

@@ -12,18 +12,22 @@ PLOT_EF <- function(){
            "refined liquids","refined liquids_CCS",
            "wind","wind_offshore","CSP", "PV", "rooftop_pv",
            "nuclear", "hydro","geo")
-  GOFREE::EF.JEDI %>%
-    dplyr::select(region, unit, fuel, CON.L, CON.RL, OM, DECON) %>% # reorder columns
+  GOFREE::EF.JEDI.RAW %>%
+    dplyr::select(region, unit, fuel, Construction.Period.Y, CON.L, CON.RL, OM, DECON) %>% # reorder columns
     tidyr::gather(job, value, CON.L:DECON) %>%
     dplyr::mutate(job = gsub("CON.L","Construction-onsite", job),
            job = gsub("CON.RL","Construction-related", job),
            job = gsub("OM","O&M", job),
            job = gsub("DECON","Decommissioning total", job),
+           fuel2 = paste0(fuel, "(",Construction.Period.Y*12,")"),
+           fuel2 = ifelse(job == "O&M", fuel, fuel2),
+           fuel2 = ifelse(job == "Decommissioning total", paste0(fuel, "(",60,")"), fuel2),
            fuel = factor(fuel, levels = SEC)) %>%
     ggplot2::ggplot() +
-    ggplot2::geom_text(ggplot2::aes(x = fuel, y = value, label = region)) +
-    ggplot2::facet_wrap(~ job, ncol = 4) +
-    ggplot2::labs(x = "", y = "job_yrs/MW") +
+    ggplot2::geom_point(ggplot2::aes(x = fuel2, y = value)) +
+    ggplot2::facet_wrap(~ job, ncol = 4, scales = "free_x") +
+    ggplot2::labs(x = "", y = "Annual jobs per MW",
+                  title = "Average annual job during the practice period\n(practice period in month by job type is in parentheses)") +
     ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1
 }
 
@@ -104,6 +108,7 @@ PLOT_JOB <- function(JOB_activity){
 #'
 #' @param JOB_activity Output of GCAM_JOB()
 #'
+#' @import ggplot2 dplyr
 #' @return A trend plot of job by job type at the national level
 #' @export
 #'
@@ -111,16 +116,16 @@ PLOT_JOB <- function(JOB_activity){
 #' PLOT_JOB_TYPE(JOB_activity)
 PLOT_JOB_TYPE <- function(JOB_activity){
   JOB_activity %>%
-    dplyr::filter(Year >= 2020) %>%
-    dplyr::group_by(scenario, Year, job, Units) %>%
-    dplyr::summarise(value = sum(value), .groups = "drop") %>%
-    ggplot2::ggplot() +
-    ggplot2::geom_bar(ggplot2::aes(x = Year, y = value/10^6, fill = job),
+    filter(Year >= 2020) %>%
+    group_by(scenario, Year, job, Units) %>%
+    summarise(value = sum(value), .groups = "drop") %>%
+    ggplot() +
+    geom_bar(aes(x = Year, y = value/10^6, fill = job),
              stat = "identity", position = "stack") +
-    ggplot2::labs(x = "", y = "Million people") +
-    ggplot2::scale_fill_manual(values = colors) +
-    ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1 +
-    ggplot2::theme(legend.position = "bottom") %>%
+    labs(x = "", y = "Million people") +
+    scale_fill_manual(values = colors) +
+    theme_bw() + GOFREE::theme0 + GOFREE::theme1 +
+    theme(legend.position = "bottom") %>%
     return()
 }
 
@@ -144,58 +149,45 @@ MAP_JOB <- function(JOB_activity, year){
     dplyr::summarise(value = sum(value, na.rm = T), .groups = "drop") ->
     job.state
 
+  values <- job.state$value
+  names(values) <- job.state$region
+  df.map <- GOFREE::mapUS52Compact #Puerto Rico is not included
+  df.map$value <- values[df.map$subRegion]
 
-  # job.state %>%
-  #   ggplot2::ggplot() +
-  #   ggplot2::geom_bar(ggplot2::aes(x = reorder(region, -value), y = value/1000),
-  #                     stat = "identity") +
-  #   ggplot2::labs(x = "", y = "Thousand people",
-  #                 title = paste0("state-level power sector employment: ", year)) +
-  #   ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1 +
-  #   return()
+  df.map$value <- df.map$value / 1000
+  df.map$bin <- ifelse(df.map$value <= 1, "(0, 1k]",
+                       ifelse(df.map$value > 1 & df.map$value <= 5, "(1k, 5k]",
+                              ifelse(df.map$value > 5 & df.map$value <= 10, "(5k, 10k]",
+                                     ifelse(df.map$value > 10 & df.map$value <= 25, "(10k, 25k]",
+                                            ifelse(df.map$value > 25 & df.map$value <= 50, "(25k, 50k]",
+                                                   ifelse(df.map$value > 50 & df.map$value <= 75, "(50k, 75k]",
+                                                          ifelse(df.map$value > 75 & df.map$value <= 100, "(75k, 100k]",
+                                                                 ifelse(df.map$value > 100 & df.map$value <= 200, "(100k, 200k]",
+                                                                        ifelse(df.map$value > 200 & df.map$value <= 300, "(200k, 300k]",
+                                                                               ifelse(df.map$value > 300, "> 300k", NA_character_))))))))))
 
 
-  GOFREE::mapUS52Compact %>%
-    dplyr::select(region = subRegion) %>%
-    dplyr::left_join(job.state, by = "region") %>%
-    dplyr::mutate(
-      value = value/1000,
-      bin = dplyr::case_when(
-        value <= 1 ~ "(0, 1k]",
-        value > 1 & value <= 5 ~ "(1k, 5k]",
-        value > 5 & value <= 10 ~ "(5k, 10k]",
-        value > 10 & value <= 25 ~ "(10k, 25k]",
-        value > 25 & value <= 50 ~ "(25k, 50k]",
-        value > 50 & value <= 75 ~ "(50k, 75k]",
-        value > 75 & value <= 100 ~ "(75k, 100k]",
-        value > 100 & value <= 200 ~ "(100k, 200k]",
-        value > 200 & value <= 300 ~ "(200k, 300k]",
-        value > 300 ~ "> 300k",
-        TRUE ~ NA_character_  # Handles cases where `value` might be NA or out of range
-      ),
-      bin = factor(bin, levels = c("(0, 1k]", "(1k, 5k]", "(5k, 10k]", "(10k, 25k]",
-                                   "(25k, 50k]", "(50k, 75k]", "(75k, 100k]",
-                                   "(100k, 200k]", "(200k, 300k]", "> 300k"))) %>%
-    stats::na.omit() ->
-    df.map
+  df.map$bin <- factor(df.map$bin, levels = c("(0, 1k]", "(1k, 5k]", "(5k, 10k]",
+                                              "(10k, 25k]", "(25k, 50k]", "(50k, 75k]",
+                                              "(75k, 100k]", "(100k, 200k]", "(200k, 300k]",
+                                              "> 300k"))
 
   # top and tail 5 states
+#
+#   df.map <- df.map[order(-df.map$value), ]
+#   df.map$value <- round(df.map$value, 1)
 
-  df.map %>%
-    dplyr::arrange(desc(value)) %>%
-    dplyr::mutate(value = round(value,1)) %>%
-    utils::head(5) -> df.text.head
-  df.map %>%
-    dplyr::arrange(desc(value)) %>%
-    dplyr::mutate(value = round(value,1)) %>%
-    utils::tail(5) -> df.text.tail
+#   df.text.head <- head(df.map, 5)
+#   df.text.tail <- tail(df.map, 5)
+
 
   df.map %>%
     ggplot2::ggplot() +
     ggplot2::geom_sf(ggplot2::aes(fill = bin)) +
     ggplot2::scale_fill_brewer(palette = "Blues")+
-    ggplot2::geom_sf_text(data = df.text.head, ggplot2::aes(label = paste0(region, ":\n", value)),  color = "yellow", size = 4) +
-    ggplot2::geom_sf_text(data = df.text.tail, ggplot2::aes(label = paste0(region, ":\n ", value)),  color = "black", size = 4) +
+    ggplot2::geom_sf_text(ggplot2::aes(label = paste0(subRegion, ":\n", round(value,1))),  color = "black", size = 3) +
+    # ggplot2::geom_sf_text(data = df.text.head, ggplot2::aes(label = paste0(subRegion, ":\n", value)),  color = "yellow", size = 4) +
+    # ggplot2::geom_sf_text(data = df.text.tail, ggplot2::aes(label = paste0(subRegion, ":\n ", value)),  color = "black", size = 4) +
     ggplot2::labs(x = "", y = "", fill = "People", title = paste0("state-level power sector employment: ", year)) +
     ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1 %>%
     return()
