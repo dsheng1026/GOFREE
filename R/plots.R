@@ -103,7 +103,7 @@ PLOT_JOB <- function(JOB_activity){
 #' PLOT_JOB_TYPE
 #'
 #' @param JOB_activity Output of GCAM_JOB()
-#'
+#' @import ggplot2 dplyr
 #' @return A trend plot of job by job type at the national level
 #' @export
 #'
@@ -111,16 +111,16 @@ PLOT_JOB <- function(JOB_activity){
 #' PLOT_JOB_TYPE(JOB_activity)
 PLOT_JOB_TYPE <- function(JOB_activity){
   JOB_activity %>%
-    dplyr::filter(Year >= 2020) %>%
-    dplyr::group_by(scenario, Year, job, Units) %>%
-    dplyr::summarise(value = sum(value), .groups = "drop") %>%
-    ggplot2::ggplot() +
-    ggplot2::geom_bar(ggplot2::aes(x = Year, y = value/10^6, fill = job),
+    filter(Year >= 2020) %>%
+    group_by(scenario, Year, job, Units) %>%
+    summarise(value = sum(value), .groups = "drop") %>%
+    ggplot() +
+    geom_bar(aes(x = Year, y = value/10^6, fill = job),
              stat = "identity", position = "stack") +
-    ggplot2::labs(x = "", y = "Million people") +
-    ggplot2::scale_fill_manual(values = colors) +
-    ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1 +
-    ggplot2::theme(legend.position = "bottom") %>%
+    labs(x = "", y = "Million people") +
+    scale_fill_manual(values = colors) +
+    theme_bw() + GOFREE::theme0 + GOFREE::theme1 +
+    theme(legend.position = "bottom") %>%
     return()
 }
 
