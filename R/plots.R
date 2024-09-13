@@ -107,7 +107,6 @@ PLOT_JOB <- function(JOB_activity){
 #' PLOT_JOB_TYPE
 #'
 #' @param JOB_activity Output of GCAM_JOB()
-#'
 #' @import ggplot2 dplyr
 #' @return A trend plot of job by job type at the national level
 #' @export
@@ -172,22 +171,12 @@ MAP_JOB <- function(JOB_activity, year){
                                               "(75k, 100k]", "(100k, 200k]", "(200k, 300k]",
                                               "> 300k"))
 
-  # top and tail 5 states
-#
-#   df.map <- df.map[order(-df.map$value), ]
-#   df.map$value <- round(df.map$value, 1)
-
-#   df.text.head <- head(df.map, 5)
-#   df.text.tail <- tail(df.map, 5)
-
 
   df.map %>%
     ggplot2::ggplot() +
     ggplot2::geom_sf(ggplot2::aes(fill = bin)) +
     ggplot2::scale_fill_brewer(palette = "Blues")+
     ggplot2::geom_sf_text(ggplot2::aes(label = paste0(subRegion, ":\n", round(value,1))),  color = "black", size = 3) +
-    # ggplot2::geom_sf_text(data = df.text.head, ggplot2::aes(label = paste0(subRegion, ":\n", value)),  color = "yellow", size = 4) +
-    # ggplot2::geom_sf_text(data = df.text.tail, ggplot2::aes(label = paste0(subRegion, ":\n ", value)),  color = "black", size = 4) +
     ggplot2::labs(x = "", y = "", fill = "People", title = paste0("state-level power sector employment: ", year)) +
     ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1 %>%
     return()
