@@ -4,7 +4,10 @@
 \alias{PLOT_EF}
 \title{PLOT_EF}
 \usage{
-PLOT_EF()
+PLOT_EF(state = NULL)
+}
+\arguments{
+\item{state}{"state abbreviation" or null}
 }
 \value{
 A plot of employment factor by fuel technology and state

@@ -4,7 +4,7 @@
 \alias{PLOT_JOB}
 \title{PLOT_JOB}
 \usage{
-PLOT_JOB(JOB_activity)
+PLOT_JOB(JOB_activity, state = NULL)
 }
 \arguments{
 \item{JOB_activity}{Output from GCAM_JOB()}

@@ -4,7 +4,7 @@
 \alias{DECOM_JOB}
 \title{DECOM_JOB}
 \usage{
-DECOM_JOB(GW_activity, method)
+DECOM_JOB(GW_activity, method = NULL)
 }
 \arguments{
 \item{GW_activity}{Output from GCAM_GW()}
@@ -21,5 +21,5 @@ DECOM_JOB
 }
 \examples{
 job.DECOM <- DECOM_JOB(GW_activity, "Net")
-job.DECOM <- DECOM_JOB(GW_activity, "Total")
+job.DECOM <- DECOM_JOB(GW_activity)
 }

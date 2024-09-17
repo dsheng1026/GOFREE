@@ -5,7 +5,7 @@
 \alias{mapUS52Compact}
 \title{mapUS52Compact}
 \format{
-An object of class \code{sf} (inherits from \code{data.frame}) with 52 rows and 7 columns.
+An object of class \code{sf} (inherits from \code{data.frame}) with 51 rows and 7 columns.
 }
 \source{
 https://github.com/JGCRI/rmap/tree/main/data

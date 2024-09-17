@@ -4,7 +4,7 @@
 \alias{CON_JOB}
 \title{CON_JOB}
 \usage{
-CON_JOB(GW_activity, method)
+CON_JOB(GW_activity, method = NULL)
 }
 \arguments{
 \item{GW_activity}{Output from GCAM_GW()}
@@ -21,5 +21,5 @@ CON_JOB
 }
 \examples{
 job.CON <- CON_JOB(GW_activity, "Net")
-job.CON <- CON_JOB(GW_activity, "Total")
+job.CON <- CON_JOB(GW_activity)
 }

@@ -70,7 +70,7 @@ theme1 <- ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 40, hjust =
                 panel.spacing.y = ggplot2::unit(0.5, "lines"),
                 panel.spacing.x = ggplot2::unit(0.5, "lines"))
 
-colors <- c("OM_fixed" = "#1f78b4", "OM_var" = "#a6cee3",  # Group 1 colors (blue shades)
+colors <- c("OM_fixed" = "#1f78b4", "OM_var" = "#a6cee3",  "OM_total" = "#5d9bcf",# Group 1 colors (blue shades)
             "Construction-onsite" = "#33a02c", "Construction-related" = "#b2df8a",  # Group 2 colors (green shades)
             "Decommission" = "#e31a1c")
 

@@ -1,36 +1,65 @@
 
 #' PLOT_EF
-#'
+#' @param state "state abbreviation" or null
+#' @import ggplot2 dplyr tidyr
 #' @return A plot of employment factor by fuel technology and state
 #' @export
 #'
 #' @examples
 #' PLOT_EF()
-PLOT_EF <- function(){
+PLOT_EF <- function(state = NULL){
+
   SEC <- c("gas","gas_CCS",  "coal", "coal_CCS",
            "biomass", "biomass_CCS",
            "refined liquids","refined liquids_CCS",
            "wind","wind_offshore","CSP", "PV", "rooftop_pv",
            "nuclear", "hydro","geo")
-  GOFREE::EF.JEDI.RAW %>%
-    dplyr::select(region, unit, fuel, Construction.Period.Y, CON.L, CON.RL, OM, DECON) %>% # reorder columns
-    tidyr::gather(job, value, CON.L:DECON) %>%
-    dplyr::mutate(job = gsub("CON.L","Construction-onsite", job),
-           job = gsub("CON.RL","Construction-related", job),
-           job = gsub("OM","O&M", job),
-           job = gsub("DECON","Decommissioning total", job),
-           fuel2 = paste0(fuel, "(",Construction.Period.Y*12,")"),
-           fuel2 = ifelse(job == "O&M", fuel, fuel2),
-           fuel2 = ifelse(job == "Decommissioning total", paste0(fuel, "(",60,")"), fuel2),
-           fuel = factor(fuel, levels = SEC)) %>%
-    ggplot2::ggplot() +
-    ggplot2::geom_point(ggplot2::aes(x = fuel2, y = value)) +
-    ggplot2::facet_wrap(~ job, ncol = 4, scales = "free_x") +
-    ggplot2::labs(x = "", y = "Annual jobs per MW",
-                  title = "Average annual job during the practice period\n(practice period in month by job type is in parentheses)") +
-    ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1
-}
 
+
+  if (is.null(state)){
+    EF.JEDI.RAW %>%
+      select(region, unit, fuel, Construction.Period.Y, CON.L, CON.RL, OM, DECON) %>% # reorder columns
+      gather(job, value, CON.L:DECON) %>%
+      mutate(job = gsub("CON.L","Construction-onsite", job),
+             job = gsub("CON.RL","Construction-related", job),
+             job = gsub("OM","O&M", job),
+             job = gsub("DECON","Decommissioning total", job),
+             fuel2 = paste0(fuel, "(",Construction.Period.Y*12,")"),
+             fuel2 = ifelse(job == "O&M", fuel, fuel2),
+             fuel2 = ifelse(job == "Decommissioning total", paste0(fuel, "(",60,")"), fuel2),
+             fuel = factor(fuel, levels = SEC)) %>%
+      drop_na() %>%
+      ggplot() +
+      geom_point(ggplot2::aes(x = fuel2, y = value)) +
+      facet_wrap(~ job, ncol = 4, scales = "free_x") +
+      labs(x = "", y = "Annual jobs per MW",
+           title = "Average annual job during the practice period: USA states\n(practice period in month by job type is in parentheses)") +
+      theme_bw() + theme0 + theme1 %>% return()
+  }
+  else if (state %in% gcamusa.STATES){
+    EF.JEDI.RAW %>%
+      filter(region == state) %>%
+      select(region, unit, fuel, Construction.Period.Y, CON.L, CON.RL, OM, DECON) %>% # reorder columns
+      gather(job, value, CON.L:DECON) %>%
+      mutate(job = gsub("CON.L","Construction-onsite", job),
+             job = gsub("CON.RL","Construction-related", job),
+             job = gsub("OM","O&M", job),
+             job = gsub("DECON","Decommissioning total", job),
+             fuel2 = paste0(fuel, "(",Construction.Period.Y*12,")"),
+             fuel2 = ifelse(job == "O&M", fuel, fuel2),
+             fuel2 = ifelse(job == "Decommissioning total", paste0(fuel, "(",60,")"), fuel2),
+             fuel = factor(fuel, levels = SEC)) %>%
+      drop_na() %>%
+      ggplot() +
+      geom_point(ggplot2::aes(x = fuel2, y = value)) +
+      facet_wrap(~ job, ncol = 4, scales = "free_x") +
+      labs(x = "", y = "Annual jobs per MW",
+           title = paste0("Average annual job during the practice period: ", state, "\n(practice period in month by job type is in parentheses)")) +
+      theme_bw() + theme0 + theme1 %>% return()
+  }
+  else {stop("Not a valid input, use a capitalized 2-letter state abbreviations or NULL")
+  }
+}
 
 
 
@@ -38,6 +67,7 @@ PLOT_EF <- function(){
 #'
 #' @param GW_activity Output from GCAM_GW()
 #' @param method "Net" or "Total"
+#' @import ggplot2 dplyr tidyr
 #'
 #' @return A trend plot of capacity activity by fuel technology at the national level
 #' @export
@@ -45,7 +75,7 @@ PLOT_EF <- function(){
 #' @examples
 #' PLOT_GW(GW_activity, "Net")
 #' PLOT_GW(GW_activity, "Total")
-PLOT_GW <- function(GW_activity, method = NULL){
+PLOT_GW <- function(GW_activity, state = NULL, method = NULL){
 
   if (is.null(method)||method %in% c("Total", "total")){
     ACTIVITY <-  c("installed", "additions", "retirements")
@@ -53,54 +83,104 @@ PLOT_GW <- function(GW_activity, method = NULL){
     ACTIVITY <- c("installed", "add_adj", "ret_adj")
   } else {stop("Not a valid input, use either 'Net' or 'Total'")
   }
-  GW_activity %>%
-    dplyr::filter(Year >= 2020) %>%
-    dplyr::filter(activity %in% ACTIVITY) %>%
-    dplyr::mutate(activity = ifelse(grepl("add", activity), "Newly installed", activity),
-                  activity = ifelse(grepl("ret", activity), "Retired", activity)) %>%
-    dplyr::group_by(scenario, Year, fuel, activity, Units) %>%
-    dplyr::summarise(value = sum(value), .groups = "drop") %>%
-    tidyr::spread(activity, value) %>%
-    dplyr::mutate(across(contains("Newly installed"), ~ installed - .x, .names = "Previously Installed"),
-                  Retired = -Retired) %>%
-    dplyr::select(-installed) %>%
-    tidyr::gather(activity, value, `Newly installed`:`Previously Installed`) %>%
-    ggplot2::ggplot() +
-    ggplot2::geom_bar(ggplot2::aes(x = Year, y = value, fill = activity),
-             stat = "identity", position = "stack") +
-    ggplot2::facet_wrap(~ fuel, ncol = 4, scales = "free_y") +
-    # facet_grid(scenario~ fuel) +
-    ggplot2::labs(x = "", y = "GW") +
-    ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1 +
-    ggplot2::theme(legend.position = "bottom") %>%
-    return()
+
+  if (is.null(state)){
+    GW_activity %>%
+      filter(Year >= 2020) %>%
+      filter(activity %in% ACTIVITY) %>%
+      mutate(activity = ifelse(grepl("add", activity), "Newly installed", activity),
+             activity = ifelse(grepl("ret", activity), "Retired", activity)) %>%
+      group_by(scenario, Year, fuel, activity, Units) %>%
+      summarise(value = sum(value, na.rm = T), .groups = "drop") %>%
+      spread(activity, value) %>%
+      mutate(across(contains("Newly installed"), ~ installed - .x, .names = "Previously Installed"),
+             Retired = -Retired) %>%
+      select(-installed) %>%
+      gather(activity, value, `Newly installed`:`Previously Installed`) %>%
+      drop_na() %>%
+      ggplot() +
+      geom_bar(aes(x = Year, y = value, fill = activity),
+               stat = "identity", position = "stack") +
+      facet_wrap(~ fuel, ncol = 4, scales = "free_y") +
+      labs(x = "", y = "GW", title = paste0("USA ", method)) +
+      theme_bw() + theme0 + theme1 +
+      theme(legend.position = "bottom")  %>% return()
+  }
+  else if (state %in% gcamusa.STATES){
+    GW_activity %>%
+      filter(region == state) %>%
+      filter(Year >= 2020) %>%
+      filter(activity %in% ACTIVITY) %>%
+      mutate(activity = ifelse(grepl("add", activity), "Newly installed", activity),
+             activity = ifelse(grepl("ret", activity), "Retired", activity)) %>%
+      group_by(scenario, Year, fuel, activity, Units) %>%
+      summarise(value = sum(value, na.rm = T), .groups = "drop") %>%
+      spread(activity, value) %>%
+      mutate(across(contains("Newly installed"), ~ installed - .x, .names = "Previously Installed"),
+             Retired = -Retired) %>%
+      select(-installed) %>%
+      gather(activity, value, `Newly installed`:`Previously Installed`) %>%
+      drop_na() %>%
+      ggplot() +
+      geom_bar(aes(x = Year, y = value, fill = activity),
+               stat = "identity", position = "stack") +
+      facet_wrap(~ fuel, ncol = 4, scales = "free_y") +
+      labs(x = "", y = "GW", title = paste0(state, " ", method)) +
+      theme_bw() + theme0 + theme1 +
+      theme(legend.position = "bottom") %>% return()
+  }
+  else {stop("Not a valid input, use a capitalized 2-letter state abbreviation or NULL")
+  }
 }
+
 
 
 #' PLOT_JOB
 #'
 #' @param JOB_activity Output from GCAM_JOB()
+#' @import ggplot2 dplyr
 #'
 #' @return A trend plot of job by fuel technology and job type at the national level
 #' @export
 #'
 #' @examples
 #' PLOT_JOB(JOB_activity)
-PLOT_JOB <- function(JOB_activity){
-  JOB_activity %>%
-    dplyr::filter(Year >= 2020) %>%
-    dplyr::group_by(scenario, Year, fuel, job, Units) %>%
-    dplyr::summarise(value = sum(value), .groups = "drop") %>%
-    ggplot2::ggplot() +
-    ggplot2::geom_bar(ggplot2::aes(x = Year, y = value/1000, fill = job),
-             stat = "identity", position = "stack") +
-    ggplot2::facet_wrap(~ fuel, ncol = 4, scales = "free_y") +
-    # facet_grid(scenario~ fuel) +
-    ggplot2::labs(x = "", y = "Thousand people") +
-    ggplot2::scale_fill_manual(values = colors) +
-    ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1 +
-    ggplot2::theme(legend.position = "bottom") %>%
-    return()
+PLOT_JOB <- function(JOB_activity, state = NULL){
+  if(is.null(state)){
+    JOB_activity %>%
+      filter(!job %in% c("OM_fixed", "OM_var")) %>%
+      filter(Year >= 2020) %>%
+      group_by(scenario, Year, fuel, job, Units) %>%
+      summarise(value = sum(value, na.rm = T), .groups = "drop") %>%
+      drop_na() %>%
+      ggplot() +
+      geom_bar(aes(x = Year, y = value/1000, fill = job),
+               stat = "identity", position = "stack") +
+      facet_wrap(~ fuel, ncol = 4, scales = "free_y") +
+      labs(x = "", y = "Thousand people", title = "USA") +
+      scale_fill_manual(values = colors) +
+      theme_bw() + theme0 + theme1 +
+      theme(legend.position = "bottom") %>%
+      return()
+  }
+  else if (state %in% gcamusa.STATES){
+    JOB_activity %>%
+      filter(!job %in% c("OM_fixed", "OM_var")) %>%
+      filter(Year >= 2020) %>%
+      group_by(scenario, Year, fuel, job, Units) %>%
+      summarise(value = sum(value, na.rm = T), .groups = "drop") %>%
+      drop_na() %>%
+      ggplot() +
+      geom_bar(aes(x = Year, y = value/1000, fill = job),
+               stat = "identity", position = "stack") +
+      facet_wrap(~ fuel, ncol = 4, scales = "free_y") +
+      labs(x = "", y = "Thousand people", title = state) +
+      scale_fill_manual(values = colors) +
+      theme_bw() + theme0 + theme1 +
+      theme(legend.position = "bottom") %>% return()
+  }
+  else {stop("Not a valid input, use a capitalized 2-letter state abbreviation or NULL")
+  }
 }
 
 
@@ -113,27 +193,49 @@ PLOT_JOB <- function(JOB_activity){
 #'
 #' @examples
 #' PLOT_JOB_TYPE(JOB_activity)
-PLOT_JOB_TYPE <- function(JOB_activity){
-  JOB_activity %>%
-    filter(Year >= 2020) %>%
-    group_by(scenario, Year, job, Units) %>%
-    summarise(value = sum(value), .groups = "drop") %>%
-    ggplot() +
-    geom_bar(aes(x = Year, y = value/10^6, fill = job),
-             stat = "identity", position = "stack") +
-    labs(x = "", y = "Million people") +
-    scale_fill_manual(values = colors) +
-    theme_bw() + GOFREE::theme0 + GOFREE::theme1 +
-    theme(legend.position = "bottom") %>%
-    return()
-}
+PLOT_JOB_TYPE <- function(JOB_activity, state = NULL){
 
+  if (is.null(state)){
+    JOB_activity %>%
+      filter(Year >= 2020) %>%
+      filter(!job %in% c("OM_fixed", "OM_var")) %>%
+      group_by(scenario, Year, job, Units) %>%
+      summarise(value = sum(value, na.rm = T), .groups = "drop") %>%
+      drop_na() %>%
+      ggplot() +
+      geom_bar(aes(x = Year, y = value/10^6, fill = job),
+               stat = "identity", position = "stack") +
+      labs(x = "", y = "Million people", title = "USA") +
+      scale_fill_manual(values = colors) +
+      theme_bw() + theme0 + theme1 +
+      theme(legend.position = "bottom") %>%
+      return()
+  }
+  else if (state %in% gcamusa.STATES){
+    JOB_activity %>%
+      filter(region == state) %>%
+      filter(Year >= 2020) %>%
+      filter(!job %in% c("OM_fixed", "OM_var")) %>%
+      group_by(scenario, Year, job, Units) %>%
+      summarise(value = sum(value, na.rm = T), .groups = "drop") %>%
+      drop_na() %>%
+      ggplot() +
+      geom_bar(aes(x = Year, y = value/10^3, fill = job),
+               stat = "identity", position = "stack") +
+      labs(x = "", y = "Thousand people", title = state) +
+      scale_fill_manual(values = colors) +
+      theme_bw() + theme0 + theme1 +
+      theme(legend.position = "bottom") %>% return()
+  }
+  else {stop("Not a valid input, use a capitalized 2-letter state abbreviation or NULL")}
+}
 
 
 #' MAP_JOB
 #'
 #' @param JOB_activity Output of GCAM_JOB()
 #' @param year Year of interest, a numeric
+#' @import ggplot2 dplyr
 #'
 #' @return A map of state level total direct power sector job of a given year
 #' @export
@@ -143,14 +245,15 @@ PLOT_JOB_TYPE <- function(JOB_activity){
 MAP_JOB <- function(JOB_activity, year){
 
   JOB_activity %>%
-    dplyr::filter(Year == year) %>%
-    dplyr::group_by(scenario, region, Year, Units) %>%
-    dplyr::summarise(value = sum(value, na.rm = T), .groups = "drop") ->
+    filter(!job %in% c("OM_fixed", "OM_var")) %>%
+    filter(Year == year) %>%
+    group_by(scenario, region, Year, Units) %>%
+    summarise(value = sum(value, na.rm = T), .groups = "drop") ->
     job.state
 
   values <- job.state$value
   names(values) <- job.state$region
-  df.map <- GOFREE::mapUS52Compact #Puerto Rico is not included
+  df.map <- mapUS52Compact #Puerto Rico is not included
   df.map$value <- values[df.map$subRegion]
 
   df.map$value <- df.map$value / 1000
@@ -170,14 +273,12 @@ MAP_JOB <- function(JOB_activity, year){
                                               "(10k, 25k]", "(25k, 50k]", "(50k, 75k]",
                                               "(75k, 100k]", "(100k, 200k]", "(200k, 300k]",
                                               "> 300k"))
-
-
   df.map %>%
-    ggplot2::ggplot() +
-    ggplot2::geom_sf(ggplot2::aes(fill = bin)) +
-    ggplot2::scale_fill_brewer(palette = "Blues")+
-    ggplot2::geom_sf_text(ggplot2::aes(label = paste0(subRegion, ":\n", round(value,1))),  color = "black", size = 3) +
-    ggplot2::labs(x = "", y = "", fill = "People", title = paste0("state-level power sector employment: ", year)) +
-    ggplot2::theme_bw() + GOFREE::theme0 + GOFREE::theme1 %>%
+    ggplot() +
+    geom_sf(ggplot2::aes(fill = bin)) +
+    scale_fill_brewer(palette = "Blues")+
+    geom_sf_text(aes(label = paste0(subRegion, ":\n", round(value,1))),  color = "black", size = 3) +
+    labs(x = "", y = "", fill = "People", title = paste0("state-level power sector employment: ", year)) +
+    theme_bw() + theme0 + theme1 %>%
     return()
 }

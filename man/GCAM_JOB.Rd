@@ -4,7 +4,7 @@
 \alias{GCAM_JOB}
 \title{GCAM_JOB}
 \usage{
-GCAM_JOB(GW_activity, method)
+GCAM_JOB(GW_activity, method = NULL)
 }
 \arguments{
 \item{GW_activity}{Output from GCAM_GW()}
@@ -21,5 +21,5 @@ GCAM_JOB
 }
 \examples{
 JOB_activity <- GCAM_JOB(GW_activity, "Net")
-JOB_activity <- GCAM_JOB(GW_activity, "Total")
+JOB_activity <- GCAM_JOB(GW_activity)
 }

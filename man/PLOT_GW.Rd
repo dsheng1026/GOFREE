@@ -4,7 +4,7 @@
 \alias{PLOT_GW}
 \title{PLOT_GW}
 \usage{
-PLOT_GW(GW_activity, method)
+PLOT_GW(GW_activity, state = NULL, method = NULL)
 }
 \arguments{
 \item{GW_activity}{Output from GCAM_GW()}
