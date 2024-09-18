@@ -33,7 +33,7 @@ PLOT_EF <- function(state = NULL){
       geom_point(ggplot2::aes(x = fuel2, y = value)) +
       facet_wrap(~ job, ncol = 4, scales = "free_x") +
       labs(x = "", y = "Annual jobs per MW",
-           title = "Average annual job during the practice period: USA states\n(practice period in month by job type is in parentheses)") +
+           title = "Average annual jobs during the project period: USA states\n(project period in months by job type is in parentheses)") +
       theme_bw() + theme0 + theme1 %>% return()
   }
   else if (state %in% gcamusa.STATES){
@@ -54,7 +54,7 @@ PLOT_EF <- function(state = NULL){
       geom_point(ggplot2::aes(x = fuel2, y = value)) +
       facet_wrap(~ job, ncol = 4, scales = "free_x") +
       labs(x = "", y = "Annual jobs per MW",
-           title = paste0("Average annual job during the practice period: ", state, "\n(practice period in month by job type is in parentheses)")) +
+           title = paste0("Average annual jobs during the project period: ", state, "\n(project period in months by job type is in parentheses)")) +
       theme_bw() + theme0 + theme1 %>% return()
   }
   else {stop("Not a valid input, use a capitalized 2-letter state abbreviations or NULL")
@@ -165,6 +165,7 @@ PLOT_JOB <- function(JOB_activity, state = NULL){
   }
   else if (state %in% gcamusa.STATES){
     JOB_activity %>%
+      filter(region == state) %>%
       filter(!job %in% c("OM_fixed", "OM_var")) %>%
       filter(Year >= 2020) %>%
       group_by(scenario, Year, fuel, job, Units) %>%
@@ -276,7 +277,8 @@ MAP_JOB <- function(JOB_activity, year){
   df.map %>%
     ggplot() +
     geom_sf(ggplot2::aes(fill = bin)) +
-    scale_fill_brewer(palette = "Blues")+
+    scale_fill_manual(values = map.colors) +
+    # scale_fill_brewer(palette = "Blues")+
     geom_sf_text(aes(label = paste0(subRegion, ":\n", round(value,1))),  color = "black", size = 3) +
     labs(x = "", y = "", fill = "People", title = paste0("state-level power sector employment: ", year)) +
     theme_bw() + theme0 + theme1 %>%

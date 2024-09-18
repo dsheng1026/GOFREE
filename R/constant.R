@@ -74,3 +74,12 @@ colors <- c("OM_fixed" = "#1f78b4", "OM_var" = "#a6cee3",  "OM_total" = "#5d9bcf
             "Construction-onsite" = "#33a02c", "Construction-related" = "#b2df8a",  # Group 2 colors (green shades)
             "Decommission" = "#e31a1c")
 
+c("(0, 1k]", "(1k, 5k]", "(5k, 10k]",
+  "(10k, 25k]", "(25k, 50k]", "(50k, 75k]",
+  "(75k, 100k]", "(100k, 200k]", "(200k, 300k]",
+  "> 300k")
+
+map.colors <- c("(0, 1k]" = "#f7fbff", "(1k, 5k]" = "#deebf7",  "(5k, 10k]" = "#c6dbef",# Group 1 colors (blue shades)
+            "(10k, 25k]" = "#9ecae1", "(25k, 50k]" = "#6baed6", "(50k, 75k]" = "#4292c6",
+            "(75k, 100k]" = "#2171b5", "(100k, 200k]" = "#08519c", "(200k, 300k]" = "#08306b", "> 300k" = "#052954")
+
