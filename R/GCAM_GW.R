@@ -26,7 +26,7 @@ GCAM_GW <- function(elec_gen_activity){
      filter(grepl("hydro", subsector)) %>%
      mutate(technology = gsub(" ", "", technology)) %>%
      left_join(hydro_cf %>%  rename(capacity.factor = value), by = "region") %>%
-     mutate(value = (value / GOFREE::CONV_GWH_EJ) / (8760 * capacity.factor), # EJ to GW
+     mutate(value = (value / GCAMUSAJobs::CONV_GWH_EJ) / (8760 * capacity.factor), # EJ to GW
                   Units = "GW",
                   fuel = ifelse(grepl("CCS", technology), paste0(fuel, "_CCS"), fuel)) ->
     tech_GW_hydro
@@ -36,7 +36,7 @@ GCAM_GW <- function(elec_gen_activity){
      mutate(technology = gsub(" ", "", technology)) %>%
      mutate(fuel = ifelse(grepl("geo", subsector), "geo", fuel),
                   capacity.factor = geo_cf) %>% # TODO: assumption: geo_cf
-     mutate(value = (value / GOFREE::CONV_GWH_EJ) / (8760 * capacity.factor), # EJ to GW
+     mutate(value = (value / GCAMUSAJobs::CONV_GWH_EJ) / (8760 * capacity.factor), # EJ to GW
                   Units = "GW",
                   fuel = ifelse(grepl("CCS", technology), paste0(fuel, "_CCS"), fuel)) ->
     tech_GW_geo
@@ -49,7 +49,7 @@ GCAM_GW <- function(elec_gen_activity){
                      by = c("scenario", "region", "subsector", "technology", "Year")) %>%
      mutate(fuel = ifelse(grepl("gas_backup", subsector), "gas", fuel),
                   capacity.factor = ifelse(grepl("gas_backup", subsector), backup_cf, capacity.factor),
-                  value = (value / GOFREE::CONV_GWH_EJ) / (8760 * capacity.factor), # EJ to GW
+                  value = (value / GCAMUSAJobs::CONV_GWH_EJ) / (8760 * capacity.factor), # EJ to GW
                   Units = "GW",
                   fuel = ifelse(grepl("CCS", technology), paste0(fuel, "_CCS"), fuel)) %>%
      select(names(tech_GW_hydro)) %>%

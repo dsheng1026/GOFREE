@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup, message = FALSE, warning=FALSE}
-library(GOFREE)
+library(GCAMUSAJobs)
 library(dplyr)
 library(ggplot2)
 library(knitr)
@@ -27,7 +27,7 @@ This step reads in GCAM output of interest in alternative file types.
 
 Use a local GCAM output database 
 ```{r Step1, warning=FALSE}
-prj <- GOFREE::ReadGCAM(filetype = 'db',
+prj <- ReadGCAM(filetype = 'db',
                         input_path = "C:/GODEEP/GCAM7/output",
                         db_name = "database_basexdbGCAM-USA_Ref",
                         scen_name = "GCAM-USA_Ref", # this needs to match the scenario name specified in the DB
@@ -36,29 +36,27 @@ prj <- GOFREE::ReadGCAM(filetype = 'db',
 
 Use a local project data
 ```{r, warning=FALSE}
-prj <- GOFREE::ReadGCAM(filetype = 'prj',
+prj <- ReadGCAM(filetype = 'prj',
                 input_path = "C:/GODEEP/",
                 prj_name = "package.dat")
 ```
 
 Use the default data (GCAM-USA 7.1 reference) in the package 
 ```{r}
-prj <- GOFREE::ReadGCAM(filetype = 'prj',
-                input_path = system.file("extdata", package = "GOFREE"),
+prj <- ReadGCAM(filetype = 'prj',
+                input_path = system.file("extdata", package = "GCAMUSAJobs"),
                 prj_name = "package.dat")
 
 ```
 
 # Step2: calculate detailed power generation outcomes
-This step queries power generation from GCAM output and calculates power generation and changes based on associated facility capacity in operation, capacity additions, and retirements. Capacity in operation reflects observed power generation, while additions and retirements drive changes in power generation by technology and vintage over time.
-
-**running** and **installed** describe capacity in operation,  while **additions** and **add_adj** activities relate to capacity addition. Capacity retirements are captured by **retirements**, **natural_retire**, **early_retire**, **early_ret_adj**, and **ret_adj** activities describe capacity retirement. Please refer to documentation (**insert a link**) for details.
+This step queries power generation from GCAM output, which provides generation for all capacity in operation, and calculates the implied power generation associated with installed capacity, newly added capacity, and retired capacity. The specific types of generation (“activities”) calculated are: Capacity in operation: **running**, **installed**; Capacity addition: **additions**, **add_adj**; Capacity retirements: **retirements**, **natural_retire**, **early_retire**, **early_ret_adj**, and **ret_adj**. The "_adj" activities indicate different methods of calculation (net vs. total, see Step 4). Please refer to documentation (insert a link) for details.
 
 The power generation output is annual, broken down by state, fuel type, and technology. This step takes about 20 seconds to execute and generate output for a given scenario.
 
 
 ```{r Step2}
-EJ_activity <- GOFREE::GCAM_EJ(prj)
+EJ_activity <- GCAM_EJ(prj)
 ```
 
 
@@ -72,7 +70,7 @@ head(EJ_activity %>% filter(region == "CA", Year == 2050), 10)
 This step derives the underlying facility capacity by different activities based on power generation outcome in **Step 2**. Capacity outcome of this step is at annual level by state, fuel type, and technology.
 
 ```{r}
-GW_activity <- GOFREE::GCAM_GW(EJ_activity)
+GW_activity <- GCAM_GW(EJ_activity)
 ```
 
 **Show a subset of the outcomes**
@@ -82,25 +80,24 @@ head(GW_activity %>% filter(region == "CA", Year == 2050), 10)
 ```
 
 # Step4: calculate detailed job outcomes 
-choose example with actual difference between net and total methods.
+This step calculates jobs based on the capacity activity outcome from **Step 3**, providing annual jobs by job type, state, fuel type, and load segment (base, intermittent, sub-peak, peak). The function accepts up to two arguments: the first is the capacity outcome from Step 3, and the second is an optional method indicator.
 
-This step calculates jobs based on the capacity activity outcome from **Step 3**, providing annual outputs by state, fuel type, and load segments (base, intermittent, sub-peak, peak). The function accepts up to two arguments: the first is the capacity outcome from Step 3, and the second is an optional method indicator.
+When the **Total** method is used (default), capacity additions and retirements within a region can occur simultaneously for a technology, and jobs are calculated for all capacity activities. Under the **Net** method, it assumes that capacity addition and pre-mature retirement don’t happen in the same period for a technology within the same period, and jobs are calculated based on net capacity changes.
 
-When the **Total** method is used (default), capacity additions and retirements can occur simultaneously for a technology, and jobs are calculated for all capacity activities. Under the **Net** method, it assumes that capacity of a technology is either added or retired within a period, and jobs are calculated based on net capacity changes.
 
 **Default: use the *Total* method**
 ```{r}
-JOB_activity <- GOFREE::GCAM_JOB(GW_activity)
+JOB_activity <- GCAM_JOB(GW_activity)
 ```
 
 **Specify to use the *Total* method**
 ```{r}
-JOB_activity2 <- GOFREE::GCAM_JOB(GW_activity, "Total")
+JOB_activity2 <- GCAM_JOB(GW_activity, "Total")
 ```
 
 **Specify to use the *Net* method**
 ```{r}
-JOB_activity3 <- GOFREE::GCAM_JOB(GW_activity, "Net")
+JOB_activity3 <- GCAM_JOB(GW_activity, "Net")
 ```
 
 **Compare outcomes with *Total* and *Net* methods**
@@ -118,36 +115,60 @@ JOB_activity3 %>%
 
 # Step5: plot employment factor
 
-This step plots the employment factor from the JEDI (https://www.nrel.gov/analysis/jedi/models.html) model. 
-Please refer to the documentation (**insert a link**) for details.
-Each point represents the employment factor of a state.
+This step plots the employment factor from the JEDI (https://www.nrel.gov/analysis/jedi/models.html) model. Please refer to the documentation (**insert a link**) for details. Each point represents the employment factor of a state.
+
+Running the function with no argument plots employment factors of all states.
 
 ```{r, warning=FALSE, fig.width=18, fig.height=6}
-GOFREE::PLOT_EF()
+PLOT_EF()
+```
+
+
+Specifying a state of interest plots the employment factor of the chosen state.
+```{r, warning=FALSE, fig.width=18, fig.height=6}
+PLOT_EF("CO")
 ```
 
 # Step6: plot capacity activities 
 
-This step plots the annual average capacity by activity between every GCAM model step years (by default GCAM runs every 5 years). Red + Green is the total capacity in operation in a year, where red bars denote the capacity in operation that is newly installed in a given year, and green denotes the capacity in operation that were build in the past; Blue bars denote the capacity change due to retirement. 
+This step plots the annual average capacity by fuel and activity that is assumed to exist throughout each GCAM model timestep (by default GCAM uses 5 year steps). Red + Green is the total capacity in operation in a year, where red bars denote the capacity in operation that is newly installed in a given year, and green denotes the capacity in operation was built in the past; Blue bars denote the capacity change due to retirement.
 
+National level
 ```{r, warning=FALSE, fig.width=12, fig.height=6}
-GOFREE::PLOT_GW(GW_activity)
+PLOT_GW(GW_activity)
+```
+
+
+Texas
+```{r, warning=FALSE, fig.width=12, fig.height=6}
+PLOT_GW(GW_activity, "TX")
 ```
 
 # Step7: plot job by fuel and types
-This step plots the national power sector average annual direct job between every GCAM model step years (by default GCAM runs every 5 years), by fuel types and job types 
+This step plots the power sector average annual direct job by fuel and job type that are assumed to exist throughout each GCAM model timestep (by default GCAM uses 5 year steps).
 
+National level
 ```{r, warning=FALSE, fig.width=12, fig.height=6}
-GOFREE::PLOT_JOB(JOB_activity)
+PLOT_JOB(JOB_activity)
+```
+
+Colorado
+```{r, warning=FALSE, fig.width=12, fig.height=6}
+PLOT_JOB(JOB_activity, "CO")
 ```
 
 # Step8: plot job by job types
-This step plots the national power sector average annual direct job between every GCAM model step years (by default GCAM runs every 5 years), by job types.
+This step plots the power sector average annual direct jobs by job type that are assumed to exist throughout each GCAM model timestep (by default GCAM uses 5 year step).
 
+National level
 ```{r, warning=FALSE, fig.width=12, fig.height=6}
-GOFREE::PLOT_JOB_TYPE(JOB_activity)
+PLOT_JOB_TYPE(JOB_activity)
 ```
 
+Colorado
+```{r, warning=FALSE, fig.width=12, fig.height=6}
+PLOT_JOB_TYPE(JOB_activity, "CO")
+```
 
 # Step9: job by state of a given year
 This step maps out the state-level power sector direct job in a given year.
