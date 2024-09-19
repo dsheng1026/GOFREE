@@ -1,5 +1,5 @@
 Package: GCAMUSAJobs
-Title: What the Package Does (One Line, Title Case)
+Title: Tool for project jobs based on GCAM-USA results
 Version: 0.0.1
 Authors@R: 
     person("Di", "Sheng", , "di.sheng@pnnl.gov", role = c("aut", "cre"),
