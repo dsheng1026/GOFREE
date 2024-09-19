@@ -8,7 +8,7 @@ ReadGCAM(
   filetype,
   input_path,
   db_name,
-  query = system.file("extdata", "my_batch.xml", package = "GOFREE"),
+  query = system.file("extdata", "my_batch.xml", package = "GCAMUSAJobs"),
   scen_name,
   prj_name
 )
@@ -36,7 +36,7 @@ ReadGCAM
 prj <- ReadGCAM(filetype = 'db',
 input_path = "path",
 db_name = "DB",
-query = system.file("extdata", "my_batch.xml", package = "GOFREE"),,
+query = system.file("extdata", "my_batch.xml", package = "GCAMUSAJobs"),,
 scen_name = "Scenario_from_DB",
 prj_name = "A_Project_Name.dat")
 }

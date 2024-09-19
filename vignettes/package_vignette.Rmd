@@ -139,9 +139,9 @@ PLOT_GW(GW_activity)
 ```
 
 
-Texas
+Colorado
 ```{r, warning=FALSE, fig.width=12, fig.height=6}
-PLOT_GW(GW_activity, "TX")
+PLOT_GW(GW_activity, "CO")
 ```
 
 # Step7: plot job by fuel and types

@@ -289,6 +289,37 @@ GCAM_EJ <- function(prj){
                         mutate(activity = "installed")) %>%
      bind_rows(elec_add_ret %>%  gather(activity, value, retirements:ret_adj)) ->
     elec_activity
+
+
+  cap_fac_join <- rgcam::getQuery(prj, 'GCAM_USA elec cap-fac by cooling tech') %>%
+    select(scenario, region, year, sector, subsector = subsector...5,
+           subsector.1 = subsector...6, technology, value) %>%
+    mutate(fuel = subsector,
+           fuel = ifelse(grepl("offshore", subsector.1), "wind_offshore", fuel),
+           subsector = gsub(",depth=1", "", subsector.1),
+           technology = gsub(" ", "", technology),
+           fuel = ifelse(grepl("CSP", subsector), "CSP", fuel), # separate CSP and PV from solar
+           fuel = ifelse(grepl("PV", subsector), "PV", fuel))
+
+
+  elec_activity %>%
+    filter(!grepl("hydro", subsector)) %>%
+    filter(!grepl("geo", subsector)) %>%
+    mutate(technology = gsub(" ", "", technology)) %>%
+    left_join(cap_fac_join %>% rename(Year = year, capacity.factor = value),
+            by = c("scenario", "region", "subsector", "technology", "Year")) %>%
+    bind_rows(elec_activity %>%
+                filter(grepl("geo", subsector)) %>%
+                mutate(technology = gsub(" ", "", technology)) %>%
+                mutate(fuel = ifelse(grepl("geo", subsector), "geo", fuel),
+                       capacity.factor = geo_cf)) %>%
+    bind_rows(elec_activity %>%
+                filter(grepl("hydro", subsector)) %>%
+                mutate(technology = gsub(" ", "", technology)) %>%
+                left_join(hydro_cf %>%  rename(capacity.factor = value), by = "region")) %>%
+    select(-sector, -subsector.1)->
+    elec_gen_activity
+
   # OUTPUT : elec_activity ----
-  return(elec_activity)
+  return(elec_gen_activity)
 }
