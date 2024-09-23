@@ -82,7 +82,7 @@ head(GW_activity %>% filter(region == "CA", Year == 2050), 10)
 # Step4: calculate detailed job outcomes 
 This step calculates jobs based on the capacity activity outcome from **Step 3**, providing annual jobs by job type, state, fuel type, and load segment (base, intermittent, sub-peak, peak). The function accepts up to two arguments: the first is the capacity outcome from Step 3, and the second is an optional method indicator.
 
-When the **Total** method is used (default), capacity additions and retirements within a region can occur simultaneously for a technology, and jobs are calculated for all capacity activities. Under the **Net** method, it assumes that capacity addition and pre-mature retirement don’t happen in the same period for a technology within the same period, and jobs are calculated based on net capacity changes.
+When the **Total** method is used (default), capacity additions and pre-mature retirements within a region can occur simultaneously for a technology, and jobs are calculated for all capacity activities. Under the **Net** method, it assumes that capacity addition and pre-mature retirement don’t happen in the same period for a technology within the same period, and jobs are calculated based on net capacity changes.
 
 
 **Default: use the *Total* method**
