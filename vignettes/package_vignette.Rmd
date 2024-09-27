@@ -115,7 +115,7 @@ JOB_activity3 %>%
 
 # Step5: plot employment factor
 
-This step plots the employment factor from the JEDI (https://www.nrel.gov/analysis/jedi/models.html) model. Please refer to the documentation (**insert a link**) for details. Each point represents the employment factor of a state.
+This step plots the employment factor from the JEDI (https://www.nrel.gov/analysis/jedi/models.html) model. Please refer to the documentation (https://github.com/JGCRI/GCAMUSAJobs/blob/paper/docs/tutorials/Documentation_GCAMUSAJobs.docx) for details. Each point represents the employment factor of a state.
 
 Running the function with no argument plots employment factors of all states.
 
