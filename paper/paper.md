@@ -4,16 +4,16 @@ authors:
 - affiliation: 1
   name: Di Sheng
   orcid: 0009-0006-7567-380X
-- affiliation: 1
+- affiliation: "2, 3"
   name: Brian O'Neill
   orcid: 0000-0001-7505-8897
-- affiliation: 1
-  name: Stephanie Waldhoff
+- affiliation: 2
+  name: Stephanie Morris
   orcid: 0000-0002-8073-0868
-- affiliation: 1
+- affiliation: 2
   name: Matthew Binsted
   orcid: 0000-0002-5177-7253
-- affiliation: 1
+- affiliation: "2, 3"
   name: Ying Zhang
   orcid: 0000-0002-0036-7502
 date: "04 August 2025"
@@ -30,7 +30,11 @@ tags:
 - employment
 affiliations:
 - index: 1
+  name: International Institute for Applied Systems Analysis, Laxenburg, Austria
+- index: 2
   name: Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA
+- index: 3
+  name: Center for Global Sustainability, University of Maryland, College Park, MD, USA
 ---
 
 # Summary
