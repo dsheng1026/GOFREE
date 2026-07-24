@@ -1,6 +1,6 @@
 Package: GCAMUSAJobs
 Title: GCAMUSAJob: An R package for employment projections based on GCAM-USA power sector outcomes
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c( 
     person("Di", "Sheng", , "di.sheng@pnnl.gov", role = c("aut")),
     person("Brian", "O’Neill", , "brian.oneill@pnnl.gov", role = c("aut")),
