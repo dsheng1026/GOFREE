@@ -2,3 +2,4 @@
 ^renv\.lock$
 ^GOFREE\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
